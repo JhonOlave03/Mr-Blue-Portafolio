@@ -507,6 +507,8 @@
     <script>
         // Esperar a que el DOM cargue
         document.addEventListener("DOMContentLoaded", () => {
+            // Establecer modo oscuro por defecto
+            document.body.classList.add("modo-oscuro");
             const botonModo = document.querySelector(".btn-dn");
 
             botonModo.addEventListener("click", () => {
