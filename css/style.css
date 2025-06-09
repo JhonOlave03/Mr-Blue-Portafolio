@@ -990,17 +990,26 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   transform: scale(1.05);
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .bloque-principal {
     padding-top: 100px;
   }
   .bloque-principal .menu-navegacion {
     position: fixed;
   }
+  .bloque-principal .menu-navegacion .tam-contenedor {
+    justify-content: flex-start;
+  }
   .bloque-principal .menu-navegacion .tam-contenedor .info-perfil .perfil {
     margin-right: 0;
   }
+  .bloque-principal .menu-navegacion .tam-contenedor .info-perfil .info {
+    margin-left: 10px;
+  }
   .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion {
+    justify-content: flex-end;
+  }
+  .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn {
     display: none;
   }
   .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces {
@@ -1008,6 +1017,10 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   }
   .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li {
     margin: 0;
+  }
+  .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .modo-dn {
+    display: block;
+    margin-left: 100px;
   }
   .bloque-principal .quien-soy {
     background-image: none;

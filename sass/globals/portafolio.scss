@@ -1063,20 +1063,25 @@ body.modo-oscuro {
     }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 768px) {
     .bloque-principal{
         padding-top: 100px;
         .menu-navegacion{
             position: fixed;
             .tam-contenedor{
+                justify-content: flex-start;
                 .info-perfil{
                     .perfil{
                         margin-right: 0;
                     }
+                    .info{
+                        margin-left: 10px;
+                    }
                 }
                 .barra-navegacion{
-                    display: none;
+                    justify-content: flex-end; 
                     .opciones-btn{
+                        display: none;
                         .enlaces{
                             justify-content: end;
 
@@ -1084,6 +1089,10 @@ body.modo-oscuro {
                                 margin: 0;
                             }
                         }
+                    }
+                    .modo-dn {
+                        display: block; // Asegura que se muestre el contenedor del botón
+                        margin-left: 100px; // Ajuste si es necesario
                     }
                 }
             }
@@ -1177,4 +1186,4 @@ body.modo-oscuro {
             bottom: 70px;
             right: 35px;
         }
-    }
+}
