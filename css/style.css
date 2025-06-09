@@ -1,0 +1,1071 @@
+*, *::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  outline: 1px solid red;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body.modo-oscuro {
+  background: linear-gradient(165deg, #501984 30%, #090111 75%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff;
+}
+body.modo-oscuro .quien-soy {
+  background: none;
+}
+body.modo-oscuro .quien-soy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: transparent;
+  z-index: 1;
+  height: 104vh;
+}
+body.modo-oscuro .quien-soy .imagen-texto .text-slider {
+  background-color: transparent;
+}
+body.modo-oscuro .quien-soy .imagen-texto .text-slider .text-princ .slider-1 h3 {
+  color: white;
+}
+body.modo-oscuro .quien-soy .imagen-texto .text-slider .text-princ .slider-2 h1, body.modo-oscuro .quien-soy .imagen-texto .text-slider .text-princ .slider-2 p {
+  color: white;
+}
+body.modo-oscuro .quien-soy .imagen-texto .text-slider .text-princ .slider-2 .btn-proyecto {
+  background-color: #8D2CE9;
+}
+body.modo-oscuro .quien-soy .imagen-texto .text-slider .text-princ .slider-2 .btn-proyecto:hover {
+  background-color: transparent;
+  border: 2px solid white;
+}
+body.modo-oscuro .quien-soy .imagen-texto .text-slider .text-princ .slider-2 .btn-proyecto:hover a:hover {
+  color: white;
+}
+body.modo-oscuro .quien-soy .imagen-texto .text-slider .marcadores {
+  padding: 0 10px 0 10px;
+}
+body.modo-oscuro .quien-soy .imagen-texto .text-slider .marcadores .circulos, body.modo-oscuro .bloque-principal .quien-soy .imagen-texto .text-slider .marcadores .circulos-1, .bloque-principal body.modo-oscuro .quien-soy .imagen-texto .text-slider .marcadores .circulos-1,
+body.modo-oscuro .bloque-principal .quien-soy .imagen-texto .text-slider .marcadores .circulos-2,
+.bloque-principal body.modo-oscuro .quien-soy .imagen-texto .text-slider .marcadores .circulos-2 {
+  background-color: white;
+}
+body.modo-oscuro .quien-soy .imagen-texto .text-slider .marcadores .circulos.active, body.modo-oscuro .bloque-principal .quien-soy .imagen-texto .text-slider .marcadores .active.circulos-1, .bloque-principal body.modo-oscuro .quien-soy .imagen-texto .text-slider .marcadores .active.circulos-1,
+body.modo-oscuro .bloque-principal .quien-soy .imagen-texto .text-slider .marcadores .active.circulos-2,
+.bloque-principal body.modo-oscuro .quien-soy .imagen-texto .text-slider .marcadores .active.circulos-2 {
+  background-color: #8D2CE9;
+}
+body.modo-oscuro .experiencia .contenedor .tit-seccion h1 {
+  color: white;
+}
+body.modo-oscuro .experiencia .contenedor .seleccion-exp {
+  border: 3px solid white;
+}
+body.modo-oscuro .experiencia .contenedor .seleccion-exp .elegir-opcion {
+  color: white;
+  border-right: 2px solid white;
+}
+body.modo-oscuro .experiencia .contenedor .seleccion-exp .elegir-opcion.active {
+  background-color: #8D2CE9;
+}
+body.modo-oscuro .experiencia .contenedor .bloques-experiencia .tarjeta, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1,
+body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2,
+.bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2,
+body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2,
+.bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 {
+  border: 2px solid white;
+}
+body.modo-oscuro .experiencia .contenedor .bloques-experiencia .tarjeta .cargo-empresa h3, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa h3, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa h3, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa h3, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa h3, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa h3, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa h3, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa h3, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa h3,
+body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa h3,
+.bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa h3,
+body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa h3,
+.bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa h3, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa h3, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa h3, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa h3, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa h3, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa h3, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa h3, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa h3, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa h3, body.modo-oscuro .experiencia .contenedor .bloques-experiencia .tarjeta .cargo-empresa h5, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa h5, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa h5, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa h5, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa h5, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa h5, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa h5, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa h5, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa h5,
+body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa h5,
+.bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa h5,
+body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa h5,
+.bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa h5, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa h5, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa h5, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa h5, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa h5, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa h5, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa h5, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa h5, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa h5, body.modo-oscuro .experiencia .contenedor .bloques-experiencia .tarjeta .cargo-empresa p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa p,
+body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa p,
+.bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa p,
+body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa p,
+.bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa p {
+  color: white;
+}
+body.modo-oscuro .experiencia .contenedor .bloques-experiencia .tarjeta .parrafo p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .parrafo p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .parrafo p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .parrafo p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .parrafo p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .parrafo p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .parrafo p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .parrafo p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .parrafo p,
+body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .parrafo p,
+.bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .parrafo p,
+body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .parrafo p,
+.bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .parrafo p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .parrafo p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .parrafo p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .parrafo p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .parrafo p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .parrafo p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .parrafo p, body.modo-oscuro .experiencia .bloque-principal .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .parrafo p, .bloque-principal .proyectos body.modo-oscuro .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .parrafo p {
+  color: white;
+}
+body.modo-oscuro .proyectos {
+  background-color: #1D0039;
+}
+body.modo-oscuro .proyectos .contenedor .tit-seccion h1 {
+  color: white;
+}
+body.modo-oscuro .proyectos .contenedor .slider-projects {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+body.modo-oscuro .proyectos .contenedor .slider-projects .btn-prev,
+body.modo-oscuro .proyectos .contenedor .slider-projects .btn-next {
+  background-color: white;
+  color: #8D2CE9;
+}
+body.modo-oscuro .proyectos .contenedor .slider-projects .btn-prev:hover,
+body.modo-oscuro .proyectos .contenedor .slider-projects .btn-next:hover {
+  background-color: #8D2CE9;
+  color: white;
+}
+body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta .tit-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .tit-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-0 .tit-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .tit-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-1 .tit-proyecto,
+body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .tit-proyecto,
+.bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-2 .tit-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .tit-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-3 .tit-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .tit-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-4 .tit-proyecto {
+  color: white;
+}
+body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta .btn-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto,
+body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto,
+.bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto {
+  background-color: #8D2CE9;
+}
+body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta .btn-proyecto:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto:hover,
+body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto:hover,
+.bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto:hover {
+  border: 2px solid white;
+  background-color: transparent;
+}
+body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta .btn-proyecto:hover a:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto:hover a:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto:hover a:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto:hover a:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto:hover a:hover,
+body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto:hover a:hover,
+.bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto:hover a:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto:hover a:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto:hover a:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto:hover a:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto:hover a:hover {
+  color: white;
+}
+body.modo-oscuro .proyectos .contenedor .slider-indicadores .indicador {
+  background-color: white;
+}
+body.modo-oscuro .proyectos .contenedor .slider-indicadores .indicador.activo {
+  background-color: #8D2CE9;
+}
+body.modo-oscuro .proyectos .contenedor .btn-proyecto button {
+  color: white;
+}
+body.modo-oscuro .proyectos .contenedor .btn-proyecto:hover button:hover {
+  color: #8D2CE9;
+}
+body.modo-oscuro .herramientas .contenedor .lenguaje-tecnologia .tit-seccion h1 {
+  color: white;
+}
+body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .tit-seccion h1 {
+  color: white;
+}
+body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-habilidad img, body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad2 .paq-habilidad img {
+  filter: invert(1);
+}
+body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-habilidad h3, body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad2 .paq-habilidad h3 {
+  color: white;
+}
+
+.bloque-principal {
+  padding-top: 100px;
+}
+.bloque-principal .menu-navegacion {
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(36, 5, 65);
+  width: 100%;
+  height: 100px;
+}
+.bloque-principal .menu-navegacion .tam-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .info-perfil {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .info-perfil .perfil {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  overflow: hidden; /* Para que la imagen no se salga del contenedor circular */
+}
+.bloque-principal .menu-navegacion .tam-contenedor .info-perfil .perfil a img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .info-perfil .info h4 {
+  font-family: "kameron", serif;
+  font-size: 18px;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .info-perfil .info h5 {
+  font-family: "junge", serif;
+  font-size: 13px;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion {
+  display: flex;
+  align-items: center;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces {
+  display: flex;
+  justify-content: space-between;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li {
+  margin-right: 30px;
+  list-style: none;
+  padding-right: 15px;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li a {
+  color: white;
+  text-decoration: none;
+  border-right: 2px solid white;
+  padding-right: 10px;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+  font-family: "kameron", serif;
+  font-size: 17px;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li a:hover {
+  color: #BBCCFF; /* Cambia color al hacer hover sobre el enlace */
+  border-right: 2px solid #BBCCFF;
+  transform: scale(1.25);
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .modo-dn {
+  margin-left: -20px;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .modo-dn .btn-dn {
+  border: none;
+  background-color: transparent;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .modo-dn .btn-dn img {
+  height: 30px;
+  width: 30px;
+  color: white;
+  filter: invert(1);
+  transition: filter 0.3s ease;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .modo-dn .btn-dn img:hover {
+  filter: invert(63%) sepia(45%) saturate(350%) hue-rotate(180deg);
+}
+.bloque-principal .quien-soy {
+  display: flex;
+  background-image: url("/imagen/redes-neuronales-social.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*opacity: 0.7;
+  z-index: -1;*/
+  width: 100%;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+.bloque-principal .quien-soy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(234, 211, 255, 0.7);
+  z-index: 1;
+  height: 104vh;
+}
+.bloque-principal .quien-soy > * {
+  position: relative;
+  z-index: 2;
+}
+.bloque-principal .quien-soy .imagen-texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  z-index: 1;
+}
+.bloque-principal .quien-soy .imagen-texto .imagen-princ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 50%;
+  height: 400px;
+  border-radius: 50%;
+  margin-left: 80px;
+}
+.bloque-principal .quien-soy .imagen-texto .imagen-princ img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  z-index: 1;
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider .text-princ {
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 400px;
+  position: relative;
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider .text-princ .slider-1, .bloque-principal .quien-soy .imagen-texto .text-slider .text-princ .slider-2 {
+  display: none;
+  width: 100%;
+  text-align: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider .text-princ .slider-1.active, .bloque-principal .quien-soy .imagen-texto .text-slider .text-princ .slider-2.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 1;
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider .text-princ .slider-1 h3 {
+  margin-top: 30px;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 20px;
+  color: rgb(36, 5, 65);
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider .text-princ .slider-2 h1 {
+  font-size: 48px;
+  color: #49137C;
+  font-family: "kameron", serif;
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider .text-princ .slider-2 p {
+  margin-top: 20px;
+  font-family: "Montserrat", Sans-serif;
+  font-weight: 600;
+  color: rgb(36, 5, 65);
+  font-size: 18px;
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider .text-princ .slider-2 .btn-proyecto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: rgb(36, 5, 65);
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider .text-princ .slider-2 .btn-proyecto a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  color: white;
+  text-decoration: none;
+  font-family: "kameron", serif;
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider .text-princ .slider-2 .btn-proyecto:hover {
+  border: 2px solid rgb(36, 5, 65);
+  background-color: transparent;
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider .text-princ .slider-2 .btn-proyecto:hover a:hover {
+  color: rgb(36, 5, 65);
+  transform: scale(1.25);
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider .marcadores {
+  display: flex;
+  margin: 20px 0;
+  padding: 0 10px 0 10px;
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider .marcadores .circulos, .bloque-principal .quien-soy .imagen-texto .text-slider .marcadores .circulos-1,
+.bloque-principal .quien-soy .imagen-texto .text-slider .marcadores .circulos-2 {
+  margin: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.bloque-principal .quien-soy .imagen-texto .text-slider .marcadores .circulos.active, .bloque-principal .quien-soy .imagen-texto .text-slider .marcadores .active.circulos-1,
+.bloque-principal .quien-soy .imagen-texto .text-slider .marcadores .active.circulos-2 {
+  background-color: rgb(36, 5, 65);
+  transform: scale(1.2);
+}
+.bloque-principal .experiencia {
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloque-principal .experiencia .contenedor {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bloque-principal .experiencia .contenedor .tit-seccion h1 {
+  font-size: 40px;
+  color: #49137C;
+  font-family: "kameron", serif;
+}
+.bloque-principal .experiencia .contenedor .seleccion-exp {
+  display: flex;
+  border: 3px solid black;
+  overflow: hidden; /* Asegura que los bordes internos se manejen bien */
+  margin-bottom: 10px;
+  margin-top: 30px;
+  width: 50%;
+}
+.bloque-principal .experiencia .contenedor .seleccion-exp .elegir-opcion {
+  background-color: transparent;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-right: 2px solid black;
+  font-family: "kameron", serif;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap;
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+}
+.bloque-principal .experiencia .contenedor .seleccion-exp .elegir-opcion:last-child {
+  border-right: none;
+}
+.bloque-principal .experiencia .contenedor .seleccion-exp .elegir-opcion:hover:not(.active) {
+  background-color: #e0e0e0;
+  font-weight: 700;
+}
+.bloque-principal .experiencia .contenedor .seleccion-exp .elegir-opcion.active {
+  background-color: rgb(36, 5, 65);
+  color: white;
+  font-weight: bold;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia.active {
+  display: flex;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1,
+.bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2,
+.bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2,
+.bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2,
+.bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 350px;
+  border: 2px solid #5B179A;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta .cargo-empresa, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa,
+.bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa,
+.bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa,
+.bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa,
+.bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta .cargo-empresa h3, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa h3, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa h3, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa h3, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa h3, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa h3, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa h3, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa h3, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa h3,
+.bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa h3,
+.bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa h3,
+.bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa h3,
+.bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa h3, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa h3, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa h3, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa h3, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa h3, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa h3, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa h3, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa h3, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa h3 {
+  color: rgb(36, 5, 65);
+  font-family: "kameron", serif;
+  font-size: 16px;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta .cargo-empresa h5, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa h5, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa h5, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa h5, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa h5, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa h5, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa h5, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa h5, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa h5,
+.bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa h5,
+.bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa h5,
+.bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa h5,
+.bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa h5, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa h5, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa h5, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa h5, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa h5, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa h5, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa h5, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa h5, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa h5 {
+  margin-top: 5px;
+  color: rgb(36, 5, 65);
+  font-family: "junge", serif;
+  font-size: 12px;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta .cargo-empresa p, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa p, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa p, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa p, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa p, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa p, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa p, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa p, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa p,
+.bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa p,
+.bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa p,
+.bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa p,
+.bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .cargo-empresa p, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa p, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .cargo-empresa p, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa p, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .cargo-empresa p, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa p, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .cargo-empresa p, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa p, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .cargo-empresa p {
+  margin-top: 10px;
+  color: rgb(36, 5, 65);
+  font-family: "Montserrat", Sans-serif;
+  font-size: 8px;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta .parrafo, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .parrafo, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .parrafo, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .parrafo, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .parrafo, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .parrafo, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .parrafo, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .parrafo, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .parrafo,
+.bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .parrafo,
+.bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .parrafo,
+.bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .parrafo,
+.bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .parrafo, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .parrafo, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .parrafo, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .parrafo, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .parrafo, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .parrafo, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .parrafo, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .parrafo, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .parrafo {
+  align-content: center;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta .parrafo p, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .parrafo p, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .parrafo p, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .parrafo p, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .parrafo p, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .parrafo p, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .parrafo p, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .parrafo p, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .parrafo p,
+.bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .parrafo p,
+.bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .parrafo p,
+.bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .parrafo p,
+.bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .parrafo p, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .parrafo p, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .parrafo p, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .parrafo p, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .parrafo p, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .parrafo p, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .parrafo p, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .parrafo p, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .parrafo p {
+  margin-top: 10px;
+  color: rgb(36, 5, 65);
+  font-family: "Montserrat", Sans-serif;
+  font-size: 13px;
+  text-align: left;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta .tecno-tarjetas, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .tecno-tarjetas, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .tecno-tarjetas, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .tecno-tarjetas, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .tecno-tarjetas, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .tecno-tarjetas, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .tecno-tarjetas, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .tecno-tarjetas, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .tecno-tarjetas,
+.bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .tecno-tarjetas,
+.bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .tecno-tarjetas,
+.bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .tecno-tarjetas,
+.bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .tecno-tarjetas, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .tecno-tarjetas, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .tecno-tarjetas, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .tecno-tarjetas, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .tecno-tarjetas, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .tecno-tarjetas, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .tecno-tarjetas, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .tecno-tarjetas, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .tecno-tarjetas {
+  margin-top: 10px;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta .tecno-tarjetas .grupo1, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .tecno-tarjetas .grupo1, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .tecno-tarjetas .grupo1, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .tecno-tarjetas .grupo1, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .tecno-tarjetas .grupo1, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .tecno-tarjetas .grupo1, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .tecno-tarjetas .grupo1, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .tecno-tarjetas .grupo1, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .tecno-tarjetas .grupo1,
+.bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .tecno-tarjetas .grupo1,
+.bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .tecno-tarjetas .grupo1,
+.bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .tecno-tarjetas .grupo1,
+.bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .tecno-tarjetas .grupo1, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .tecno-tarjetas .grupo1, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .tecno-tarjetas .grupo1, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .tecno-tarjetas .grupo1, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .tecno-tarjetas .grupo1, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .tecno-tarjetas .grupo1, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .tecno-tarjetas .grupo1, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .tecno-tarjetas .grupo1, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .tecno-tarjetas .grupo1 {
+  display: flex;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .tecno-tarjetas .grupo1 .asesorio,
+.bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .tecno-tarjetas .grupo1 .asesorio,
+.bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .tecno-tarjetas .grupo1 .asesorio,
+.bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .tecno-tarjetas .grupo1 .asesorio,
+.bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .tecno-tarjetas .grupo1 .asesorio, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .tecno-tarjetas .grupo1 .asesorio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5B179A;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  margin: 5px;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .tecno-tarjetas .grupo1 .asesorio img,
+.bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .tecno-tarjetas .grupo1 .asesorio img,
+.bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .tecno-tarjetas .grupo1 .asesorio img,
+.bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .tecno-tarjetas .grupo1 .asesorio img,
+.bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .tecno-tarjetas .grupo1 .asesorio img, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .tecno-tarjetas .grupo1 .asesorio img {
+  width: 20px;
+  height: 20px;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .tecno-tarjetas .grupo1 .asesorio p,
+.bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .tecno-tarjetas .grupo1 .asesorio p,
+.bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .tecno-tarjetas .grupo1 .asesorio p,
+.bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .tecno-tarjetas .grupo1 .asesorio p,
+.bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .tecno-tarjetas .grupo1 .asesorio p, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .tecno-tarjetas .grupo1 .asesorio p {
+  color: white;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 10px;
+  margin: 0 5px;
+}
+.bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta .tecno-tarjetas .grupo2 img, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .tecno-tarjetas .grupo2 img, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .tecno-tarjetas .grupo2 img, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .tecno-tarjetas .grupo2 img, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .tecno-tarjetas .grupo2 img, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .tecno-tarjetas .grupo2 img, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .tecno-tarjetas .grupo2 img, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .tecno-tarjetas .grupo2 img, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .tecno-tarjetas .grupo2 img,
+.bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .tecno-tarjetas .grupo2 img,
+.bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .tecno-tarjetas .grupo2 img,
+.bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .tecno-tarjetas .grupo2 img,
+.bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2 .tecno-tarjetas .grupo2 img, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .tecno-tarjetas .grupo2 img, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3 .tecno-tarjetas .grupo2 img, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .tecno-tarjetas .grupo2 img, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3 .tecno-tarjetas .grupo2 img, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .tecno-tarjetas .grupo2 img, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4 .tecno-tarjetas .grupo2 img, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .tecno-tarjetas .grupo2 img, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 .tecno-tarjetas .grupo2 img {
+  width: 20px;
+  height: 20px;
+}
+.bloque-principal .proyectos {
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EDEDED;
+  padding: 20px;
+}
+.bloque-principal .proyectos .contenedor {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bloque-principal .proyectos .contenedor .tit-seccion h1 {
+  font-size: 40px;
+  color: #49137C;
+  font-family: "kameron", serif;
+}
+.bloque-principal .proyectos .contenedor .slider-projects {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  min-height: 600px;
+  position: relative;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .btn-prev,
+.bloque-principal .proyectos .contenedor .slider-projects .btn-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .btn-prev:hover,
+.bloque-principal .proyectos .contenedor .slider-projects .btn-next:hover {
+  background-color: rgb(36, 5, 65);
+}
+.bloque-principal .proyectos .contenedor .slider-projects .btn-prev {
+  left: -30px;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .btn-next {
+  right: -30px;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 450px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta .img-proy, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .img-proy, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .img-proy,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .img-proy, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .img-proy, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .img-proy {
+  width: 350px;
+  height: 300px;
+  padding: 0 8px;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta .img-proy img, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .img-proy img, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .img-proy img,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .img-proy img, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .img-proy img, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .img-proy img {
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .tit-proyecto,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .tit-proyecto {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #49137C;
+  font-family: "kameron", serif;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta .parrafo-proyecto p, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .parrafo-proyecto p, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .parrafo-proyecto p,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .parrafo-proyecto p, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .parrafo-proyecto p, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .parrafo-proyecto p {
+  font-family: "Montserrat", Sans-serif;
+  padding: 0 10px;
+  font-size: 13px;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta .img-proyectos, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .img-proyectos, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .img-proyectos,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .img-proyectos, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .img-proyectos, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .img-proyectos {
+  margin-top: 10px;
+  padding: 0 5px;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta .img-proyectos .grupo1, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .img-proyectos .grupo1, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .img-proyectos .grupo1,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .img-proyectos .grupo1, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .img-proyectos .grupo1, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .img-proyectos .grupo1 {
+  display: flex;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta .img-proyectos .grupo1 .asesorio, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .img-proyectos .grupo1 .asesorio, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .img-proyectos .grupo1 .asesorio,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .img-proyectos .grupo1 .asesorio, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .img-proyectos .grupo1 .asesorio, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .img-proyectos .grupo1 .asesorio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5B179A;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  margin: 5px;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta .img-proyectos .grupo1 .asesorio img, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .img-proyectos .grupo1 .asesorio img, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .img-proyectos .grupo1 .asesorio img,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .img-proyectos .grupo1 .asesorio img, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .img-proyectos .grupo1 .asesorio img, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .img-proyectos .grupo1 .asesorio img {
+  width: 20px;
+  height: 20px;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta .img-proyectos .grupo1 .asesorio p, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .img-proyectos .grupo1 .asesorio p, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .img-proyectos .grupo1 .asesorio p,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .img-proyectos .grupo1 .asesorio p, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .img-proyectos .grupo1 .asesorio p, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .img-proyectos .grupo1 .asesorio p {
+  color: white;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 10px;
+  margin: 0 5px;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta .btn-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: rgb(36, 5, 65);
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta .btn-proyecto a, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto a, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto a,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto a, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto a, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  color: white;
+  text-decoration: none;
+  font-family: "kameron", serif;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta .btn-proyecto:hover, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto:hover, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto:hover,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto:hover, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto:hover, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto:hover {
+  border: 2px solid rgb(36, 5, 65);
+  background-color: transparent;
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta .btn-proyecto:hover a:hover, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto:hover a:hover, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto:hover a:hover,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto:hover a:hover, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto:hover a:hover, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto:hover a:hover {
+  color: rgb(36, 5, 65);
+  transform: scale(1.25);
+}
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1,
+.bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 {
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bloque-principal .proyectos .contenedor .slider-indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: -20px;
+}
+.bloque-principal .proyectos .contenedor .slider-indicadores .indicador {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #aaa;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.bloque-principal .proyectos .contenedor .slider-indicadores .indicador.activo {
+  background-color: rgb(36, 5, 65);
+}
+.bloque-principal .proyectos .contenedor .btn-proyecto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -20px;
+  width: 200px;
+  height: 80px;
+  cursor: pointer;
+}
+.bloque-principal .proyectos .contenedor .btn-proyecto button {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(36, 5, 65);
+  text-decoration: none;
+  font-family: "kameron", serif;
+  font-size: 18px;
+  border: none;
+}
+.bloque-principal .proyectos .contenedor .btn-proyecto:hover button:hover {
+  color: rgb(36, 5, 65);
+  transform: scale(1.25);
+}
+.bloque-principal .proyectos .contenedor .ver-todos {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.bloque-principal .proyectos .contenedor .ver-todos button {
+  padding: 12px 24px;
+  font-size: 16px;
+}
+.bloque-principal .herramientas {
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloque-principal .herramientas .contenedor {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloque-principal .herramientas .contenedor .lenguaje-tecnologia {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bloque-principal .herramientas .contenedor .lenguaje-tecnologia .tit-seccion h1 {
+  font-size: 40px;
+  color: #49137C;
+  font-family: "kameron", serif;
+}
+.bloque-principal .herramientas .contenedor .lenguaje-tecnologia .logos-htl {
+  margin-top: 50px;
+}
+.bloque-principal .herramientas .contenedor .lenguaje-tecnologia .logos-htl .grupo1 img {
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.bloque-principal .herramientas .contenedor .lenguaje-tecnologia .logos-htl .grupo2 {
+  margin-left: 50px;
+}
+.bloque-principal .herramientas .contenedor .lenguaje-tecnologia .logos-htl .grupo2 img {
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+.bloque-principal .habilidades {
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloque-principal .habilidades .contenedor {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bloque-principal .habilidades .contenedor .conjunto-habilidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bloque-principal .habilidades .contenedor .conjunto-habilidad .tit-seccion h1 {
+  font-size: 40px;
+  color: #49137C;
+  font-family: "kameron", serif;
+}
+.bloque-principal .habilidades .contenedor .conjunto-habilidad .habilidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.bloque-principal .habilidades .contenedor .conjunto-habilidad .habilidad .paq-habilidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+}
+.bloque-principal .habilidades .contenedor .conjunto-habilidad .habilidad .paq-habilidad img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.bloque-principal .habilidades .contenedor .conjunto-habilidad .habilidad .paq-habilidad h3 {
+  margin-top: 10px;
+  color: #49137C;
+  font-family: "kameron", serif;
+}
+.bloque-principal .habilidades .contenedor .conjunto-habilidad .habilidad2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloque-principal .habilidades .contenedor .conjunto-habilidad .habilidad2 .paq-habilidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 20px;
+}
+.bloque-principal .habilidades .contenedor .conjunto-habilidad .habilidad2 .paq-habilidad img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.bloque-principal .habilidades .contenedor .conjunto-habilidad .habilidad2 .paq-habilidad h3 {
+  margin-top: 10px;
+  color: #49137C;
+  font-family: "kameron", serif;
+}
+.bloque-principal .contacto {
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(36, 5, 65);
+}
+.bloque-principal .contacto .contenedor {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bloque-principal .contacto .contenedor .logo-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bloque-principal .contacto .contenedor .logo-contacto .redes-sociales {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloque-principal .contacto .contenedor .logo-contacto .redes-sociales .paq-habilidad {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  margin: 5px;
+}
+.bloque-principal .contacto .contenedor .logo-contacto .redes-sociales .paq-habilidad img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.whatsApp {
+  position: fixed;
+  z-index: 1000;
+  bottom: 50px;
+  right: 75px;
+}
+.whatsApp a img {
+  width: 80px;
+  height: 80px;
+  background-color: #25D366; /* color WhatsApp */
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* sombra */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 50%;
+}
+.whatsApp a img:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .bloque-principal {
+    padding-top: 100px;
+  }
+  .bloque-principal .menu-navegacion {
+    position: fixed;
+  }
+  .bloque-principal .menu-navegacion .tam-contenedor .info-perfil .perfil {
+    margin-right: 0;
+  }
+  .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion {
+    display: none;
+  }
+  .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces {
+    justify-content: end;
+  }
+  .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li {
+    margin: 0;
+  }
+  .bloque-principal .quien-soy {
+    background-image: none;
+    background-color: rgb(234, 211, 255);
+  }
+  .bloque-principal .quien-soy .imagen-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .bloque-principal .quien-soy .imagen-texto .imagen-princ {
+    margin-left: 0;
+    display: block;
+    width: auto;
+    padding: 10px;
+    height: auto;
+  }
+  .bloque-principal .quien-soy .imagen-texto .imagen-princ img {
+    width: 300px;
+    height: 300px;
+  }
+  .bloque-principal .quien-soy .imagen-texto .text-slider {
+    width: 100%;
+  }
+  .bloque-principal .quien-soy .imagen-texto .text-slider .text-princ {
+    height: auto;
+  }
+  .bloque-principal .quien-soy .imagen-texto .text-slider .text-princ .slider-2 h1 {
+    font-size: 36px;
+  }
+  .bloque-principal .quien-soy .imagen-texto .text-slider .text-princ .slider-2 p {
+    margin-top: 10px;
+    font-weight: 200;
+    font-size: 14px;
+  }
+  .bloque-principal .experiencia .contenedor .seleccion-exp {
+    width: auto;
+  }
+  .bloque-principal .proyectos .contenedor .tit-seccion h1 {
+    text-align: center;
+  }
+  .bloque-principal .proyectos .contenedor .slider-projects .btn-prev,
+  .bloque-principal .proyectos .contenedor .slider-projects .btn-next {
+    display: none;
+  }
+  .bloque-principal .herramientas .contenedor {
+    display: block;
+  }
+  .bloque-principal .habilidades .contenedor .conjunto-habilidad .habilidad {
+    display: block;
+  }
+  .whatsApp {
+    bottom: 70px;
+    right: 35px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

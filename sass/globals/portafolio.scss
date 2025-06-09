@@ -1,0 +1,1180 @@
+@use '../config' as *;  // <- permite usar $color-principal directamente
+*, *::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    outline: 1px solid red;
+}
+
+html, body {
+  height: 100%;
+  //overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body.modo-oscuro {
+    //background: linear-gradient(to right, #2D0E4A 12%, #090111 36%);
+    //color: #ffffff;
+    //background-color: rgb(124, 173, 123);
+    //background: linear-gradient(to right, red 0%, yellow 50%, green 100%);
+    background: linear-gradient(165deg, #501984 30%, #090111 75%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+
+    .quien-soy {
+        background: none;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0; // equivalente a top: 0; right: 0; bottom: 0; left: 0;
+            background-color: transparent; // negro con 50% de opacidad
+            z-index: 1;
+            height: 104vh;
+        }
+
+        .imagen-texto{
+            .text-slider{
+                background-color: transparent;
+                .text-princ{
+                    .slider-1{
+                        h3{
+                            color: white;
+                        }
+                    }
+                    .slider-2{
+                        h1, p{
+                            color: white;
+                        }
+                        .btn-proyecto{
+                            background-color: #8D2CE9;
+
+                            &:hover{
+                                background-color: transparent;
+                                border: 2px solid white;
+                                a:hover{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+                .marcadores{
+                    padding: 0 10px 0 10px;
+                    .circulos {
+                        background-color: white;
+                    }
+                    .circulos.active {
+                        background-color: #8D2CE9;
+                    }
+                }
+
+            }
+            
+        }
+    }
+
+    .experiencia{
+        .contenedor{
+            .tit-seccion{
+                h1{
+                    color: white;
+                }
+            }
+            .seleccion-exp{
+                border: 3px solid white;
+                .elegir-opcion{
+                    color: white;
+                    border-right: 2px solid white;
+                }
+                .elegir-opcion.active{
+                    background-color: #8D2CE9; 
+                }
+            }
+            .bloques-experiencia{
+                .tarjeta{
+                    border: 2px solid white;
+                    .cargo-empresa{
+                        h3, h5, p{
+                            color: white;
+                        }
+                    }
+                    .parrafo{
+                        p{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .proyectos{
+        background-color: #1D0039;
+        .contenedor{
+            .tit-seccion{
+                h1{
+                    color: white;
+                }
+            }
+            .slider-projects{
+                width: 100%;
+                max-width: 100vw;
+                overflow-x: hidden;
+                .btn-prev,
+                .btn-next {
+                    background-color: white;
+                    color: #8D2CE9;
+
+                    &:hover{
+                        background-color:#8D2CE9;
+                        color: white;
+                    }
+                }
+
+                .tarjeta{
+                    .tit-proyecto{
+                        color: white;
+                    }
+                    .btn-proyecto{
+                        background-color: #8D2CE9;
+                        &:hover{
+                            border: 2px solid white;
+                            background-color: transparent;
+                            a:hover{
+                                color:white;
+                            }
+                        }
+                    }
+                    
+                }
+
+            }
+            .slider-indicadores{
+                .indicador{
+                    background-color: white;
+
+                    &.activo {
+                        background-color: #8D2CE9;
+                    }
+                }
+            }
+            .btn-proyecto{
+                button{
+                    color: white;
+                }
+                &:hover{
+                    button:hover{
+                        color:#8D2CE9
+                    }
+                }
+            }
+        }
+       
+    }
+
+    .herramientas{
+        .contenedor{
+            .lenguaje-tecnologia{
+                .tit-seccion{
+                    h1{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .habilidades{
+        .contenedor{
+            .conjunto-habilidad{
+                .tit-seccion{
+                    h1{
+                        color: white;
+                    }
+                }
+                .habilidad, .habilidad2{
+                    .paq-habilidad{
+                        img{
+                            filter: invert(1);
+                        }
+                        h3{
+                            color: white;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+.bloque-principal{
+    padding-top: 100px;
+    .menu-navegacion {
+        display:flex;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-principal;
+        width: 100%;
+        height: 100px;
+
+        .tam-contenedor{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+
+                .info-perfil{
+                    display: flex;
+                    //margin-right: 530px;
+                    align-items: center;
+                    color: white;
+
+                    .perfil{
+                        width: 50px;
+                        height: 50px;
+                        //background-color: rgb(210, 210, 210);
+                        border-radius: 50%;      // esto lo convierte en círculo
+                        //border: 2px solid #ccc;
+                        margin-right: 10px; 
+                        overflow: hidden; /* Para que la imagen no se salga del contenedor circular */
+                        a{
+                            img{
+                                border-radius: 50%;
+                                width: 100%;
+                                height: 100%;
+                                object-fit:fill;       // recorta la imagen para que llene el espacio 
+                            }
+                        }
+                    }
+
+                    .info{
+                        h4{
+                            font-family: $fuente-kameron;
+                            font-size: 18px;
+                        }
+                        h5{
+                            font-family: $fuente-junge;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                
+                .barra-navegacion{
+                    display: flex;
+                    align-items: center;
+                    //width: 100%;
+                    //height: 100px;
+                    //justify-content: space-between;
+
+                    .opciones-btn{
+                        .enlaces{
+                            display: flex;
+                            justify-content: space-between;
+                            li{
+                                margin-right: 30px;
+                                list-style: none;
+                                padding-right: 15px;
+                                a{
+                                    color: white;
+                                    text-decoration: none;
+                                    border-right: 2px solid white;
+                                    padding-right: 10px;
+                                    display: inline-block; // importante para transform
+                                    transition: transform 0.2s ease, color 0.2s ease;
+                                    font-family: $fuente-kameron;
+                                    font-size: 17px;
+                                    &:hover {
+                                        color: #BBCCFF; /* Cambia color al hacer hover sobre el enlace */
+                                        border-right: 2px solid #BBCCFF;
+                                        transform: scale(1.25);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .modo-dn{
+                        margin-left: -20px;
+                        //background-color: aqua;
+                        .btn-dn{
+                            border: none;
+                            background-color: transparent;
+                            img{
+                                height: 30px;
+                                width: 30px;
+                                color: white;
+                                filter: invert(1);
+                                transition: filter 0.3s ease;
+
+                                &:hover {
+                                    filter: invert(63%) sepia(45%) saturate(350%) hue-rotate(180deg);  
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+                
+        }
+    }
+
+    .quien-soy{
+        display: flex;
+        //background-color: rgb(234, 211, 255);
+        background-image:url("/imagen/redes-neuronales-social.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        /*opacity: 0.7;
+        z-index: -1;*/
+        width: 100%;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0; // equivalente a top: 0; right: 0; bottom: 0; left: 0;
+            background-color: rgba(234, 211, 255, 0.7); // negro con 50% de opacidad
+            z-index: 1;
+            height: 104vh;
+        }
+
+        > * {
+            position: relative;
+            z-index: 2; // asegura que el contenido quede por encima del fondo y la capa
+        }
+    
+        .imagen-texto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            z-index: 1;
+            //flex-wrap: wrap;
+            //width: 100%;
+            //max-width: 100vw;
+    
+            .imagen-princ{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                width: 50%;
+                height: 400px;
+                border-radius: 50%;
+                margin-left: 80px;
+                    //background-color: gray;
+
+                img{
+                    width: 400px;
+                    height: 400px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+            .text-slider{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 50%;
+                //background-color: rgba(255, 255, 255, 0.8);
+                z-index: 1;
+               
+                .text-princ{
+                    padding: 0 20px 0 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    overflow: hidden; //para las transiciones
+                    height: 400px; //Altura fija
+                    position: relative; //para posicionar marcadores de forma absoluta dentro
+                    .slider-1, .slider-2 {
+                        display: none; 
+                        width: 100%; 
+                        text-align: center; //Centra el contenido
+                        transition: opacity 1s ease-in-out; //Transición para una aparición suave
+                        opacity: 0; 
+                    }
+    
+                    .slider-1.active, .slider-2.active {
+                        display: flex; // Muestra el slider activo
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column; 
+                        opacity: 1;
+                    }
+                    .slider-1{
+                        h3{
+                            margin-top: 30px;
+                            font-family:$fuente-montserrat;
+                            font-size: 20px;
+                            color: $color-principal;
+                        }
+                    }
+                    .slider-2{
+                            h1{
+                                font-size: 48px;
+                                color: $titulos-on;
+                                font-family: $fuente-kameron;
+                            }
+                            p{
+                                margin-top: 20px;
+                                font-family:$fuente-montserrat;
+                                font-weight: 600;
+                                color: $color-principal;
+                                font-size: 18px;
+                            }
+                            .btn-proyecto{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-top: 20px;
+                                background-color: $color-principal;
+                                width: 150px;
+                                height: 40px;
+                                border-radius: 10px;
+                                cursor:pointer;
+                                a{
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    width: 150px;
+                                    height: 40px;
+                                    color: white;
+                                    text-decoration: none;
+                                    font-family: $fuente-kameron;
+                                }
+                                &:hover{
+                                    border: 2px solid $color-principal;
+                                    background-color: transparent;
+                                    a:hover{
+                                        color: $color-principal;
+                                        transform: scale(1.25);
+                                    }
+                                }
+                            }
+                    }
+                }
+                .marcadores {
+                    display: flex;
+                    margin: 20px 0;
+                    padding: 0 10px 0 10px;
+
+                    .circulos-1,
+                    .circulos-2 {
+                        @extend .circulos; // Usa esta clase común para los estilos base
+                    }
+
+                    .circulos {
+                        margin: 5px;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: gray;
+                        transition: background-color 0.3s ease, transform 0.3s ease;
+                    }
+
+                    .circulos.active {
+                        background-color: $color-principal; // tu color activo
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+                                    
+        }
+    }
+
+    .experiencia{
+        margin: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       .contenedor{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .tit-seccion{
+                h1{
+                    font-size: 40px;
+                    color: $titulos-on;
+                    font-family: $fuente-kameron;
+                }
+            }
+            .seleccion-exp{
+                display: flex;
+                border: 3px solid black;
+                overflow: hidden; /* Asegura que los bordes internos se manejen bien */
+                margin-bottom: 10px; 
+                margin-top: 30px;
+                width: 50%;
+
+                .elegir-opcion{
+                    background-color: transparent;
+                    color: black;
+                    padding: 10px 20px;
+                    border: none;
+                    border-right: 2px solid black;
+                    font-family: $fuente-kameron;
+                    font-size: 17px;
+                    cursor: pointer;
+                    transition: background-color 0.3s, color 0.3s;
+                    white-space: nowrap;
+                    flex-grow: 1; // ← Esto ahora sí funciona
+                    flex-basis: 0;
+                    text-align: center;
+
+                    &:last-child{
+                        border-right: none;
+                    }
+
+                    &:hover:not(.active){
+                        background-color: #e0e0e0;
+                        font-weight:700;
+                    }
+                }
+
+                .elegir-opcion.active{
+                    background-color: $color-principal; 
+                    color: white; 
+                    font-weight: bold; 
+                }
+            }
+            .bloques-experiencia{
+                margin-top: 30px;
+                margin-bottom: 50px;
+                display: none;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+
+                &.active {
+                    display: flex; // se muestra cuando está activo
+                }
+
+                .tarjeta{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 250px;
+                    height: 350px;
+                    border: 2px solid $borde-tarj;
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    padding-right: 20px;
+                    padding-left: 20px;
+
+                    .cargo-empresa{
+                        display: flex;
+                        justify-content:center;
+                        align-items: center;
+                        flex-direction: column;
+                        h3{
+                            color: $color-principal;
+                            font-family: $fuente-kameron;
+                            font-size: 16px;
+                        }
+                        h5{
+                            margin-top: 5px;
+                            color: $color-principal;
+                            font-family: $fuente-junge;
+                            font-size: 12px;
+                        }
+                        p{
+                            margin-top: 10px;
+                            color: $color-principal;
+                            font-family: $fuente-montserrat;
+                            font-size: 8px;
+                        }
+                    }
+                    .parrafo{
+                        align-content: center;
+                        p{
+                            margin-top: 10px;
+                            color: $color-principal;
+                            font-family: $fuente-montserrat;
+                            font-size: 13px;
+                            text-align: left;
+                        }
+                    }
+                    .tecno-tarjetas{
+                        margin-top: 10px;
+                        
+                        .grupo1{
+                            display: flex;
+                            .asesorio{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: $borde-tarj;
+                                border-radius: 5px;
+                                width: 80px;
+                                height: 30px;
+                                margin: 5px;
+                                img{
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                                p{
+                                    color: white;
+                                    font-family: $fuente-montserrat;
+                                    font-size: 10px;
+                                    margin: 0 5px;
+                                }
+                            }
+                           
+                        }
+                        .grupo2{
+                            img{
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+       }
+    }
+
+    .proyectos{
+        margin: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #EDEDED;
+        padding: 20px;
+       .contenedor{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .tit-seccion{
+                h1{
+                    font-size: 40px;
+                    color: $titulos-on;
+                    font-family: $fuente-kameron;
+                }
+            }
+            .slider-projects{
+                margin-top: 30px;
+                margin-bottom: 30px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+                min-height: 600px;
+                position: relative;
+
+                .btn-prev,
+                .btn-next {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(0, 0, 0, 0.3);
+                    color: white;
+                    border: none;
+                    padding: 10px 15px;
+                    font-size: 20px;
+                    cursor: pointer;
+                    border-radius: 50%;
+                    z-index: 1;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: $color-principal;
+                    }
+                }
+
+                .btn-prev {
+                    left: -30px; // o ajusta según tu diseño
+                }
+
+                .btn-next {
+                    right: -30px;
+                }
+
+                .tarjeta-0,.tarjeta-1,
+                .tarjeta-2,.tarjeta-3,.tarjeta-4 {
+                    @extend .tarjeta; // Usa esta clase común para los estilos base
+                }
+
+                .tarjeta{
+                    //flex: 1 1 calc(33.333% - 20px); // 3 tarjetas por fila
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 350px;
+                    height: 450px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-right: 10px;
+                    padding-left: 10px;
+
+                    .img-proy{
+                        width: 350px;
+                        height: 300px;
+                        //background-color: gray;
+                        padding: 0 8px;
+                        img{
+                            width: 350px;
+                            height: 250px;
+                            object-fit: cover;
+                        };
+                    }
+                    .tit-proyecto{
+                        margin-top: 20px;
+                        margin-bottom: 10px;
+                        color: $titulos-on;
+                        font-family: $fuente-kameron;
+                    }
+                    .parrafo-proyecto{
+                        p{
+                            font-family: $fuente-montserrat;
+                            padding: 0 10px;
+                            font-size: 13px;
+                        }
+                    }
+                    .img-proyectos{
+                        margin-top: 10px;
+                        padding: 0 5px;
+                        .grupo1{
+                            display: flex;
+                            .asesorio{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: $borde-tarj;
+                                border-radius: 5px;
+                                width: 80px;
+                                height: 30px;
+                                margin: 5px;
+                                img{
+                                    width: 20px;
+                                    height: 20px;
+                                }
+                                p{
+                                    color: white;
+                                    font-family: $fuente-montserrat;
+                                    font-size: 10px;
+                                    margin: 0 5px;
+                                }
+                            }
+                           
+                        }
+                    }
+                    .btn-proyecto{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 10px;
+                        background-color: $color-principal;
+                        width: 200px;
+                        height: 40px;
+                        border-radius: 10px;
+                        cursor:pointer;
+                        a{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 150px;
+                            height: 40px;
+                            color: white;
+                            text-decoration: none;
+                            font-family: $fuente-kameron;
+                        }
+                        &:hover{
+                            border: 2px solid $color-principal;
+                            background-color: transparent;
+                            a:hover{
+                                color: $color-principal;
+                                transform: scale(1.25);
+                            }
+                        }
+                    }
+                }
+                
+            }
+            .slider-projects .tarjeta {
+                min-height: 550px; // ajusta según tu contenido más alto
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .slider-indicadores {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: -20px;
+
+                .indicador {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background-color: #aaa;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+
+                    &.activo {
+                        background-color: $color-principal;
+                    }
+                }
+            }
+            .btn-proyecto{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: -20px;
+                width: 200px;
+                height: 80px;
+                cursor:pointer;
+                button{
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: $color-principal;
+                    text-decoration: none;
+                    font-family: $fuente-kameron;
+                    font-size: 18px;
+                    border: none;
+                }
+                &:hover{
+                    button:hover{
+                        color: $color-principal;
+                        transform: scale(1.25);
+                    }
+                }
+            }
+            .ver-todos {
+                margin-top: 20px; 
+                display: flex;
+                justify-content: center;
+
+                button {
+                    padding: 12px 24px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .herramientas{
+        margin: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       .contenedor{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .lenguaje-tecnologia{
+                padding: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .tit-seccion{
+                    h1{
+                        font-size: 40px;
+                        color: $titulos-on;
+                        font-family: $fuente-kameron;
+                    }
+                }
+                .logos-htl{
+                    margin-top: 50px;
+                    .grupo1{
+                        img{
+                            object-fit: cover;
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 50%;
+                            margin: 20px;
+                        }
+                    }
+                    .grupo2{
+                        margin-left: 50px;
+                        img{
+                            object-fit: cover;
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 50%;
+                            margin: 0 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .habilidades{
+        margin: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       .contenedor{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .conjunto-habilidad{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .tit-seccion{
+                    h1{
+                        font-size: 40px;
+                        color: $titulos-on;
+                        font-family: $fuente-kameron;
+                    }
+                }
+                .habilidad{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 50px;
+                    .paq-habilidad{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 10px;
+                        margin: 20px;
+                        img{
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                        h3{
+                            margin-top: 10px;
+                            color: $titulos-on;
+                            font-family: $fuente-kameron;
+                        }
+                    }
+                }
+                .habilidad2{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .paq-habilidad{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 10px;
+                        margin: 20px;
+                        img{
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                        }
+                        h3{
+                            margin-top: 10px;
+                            color: $titulos-on;
+                            font-family: $fuente-kameron;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contacto{
+        margin: 100px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-principal;
+       .contenedor{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .logo-contacto{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                .redes-sociales{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .paq-habilidad{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        padding: 10px;
+                        margin: 5px;
+                        img{
+                            width: 30px;
+                            height: 30px;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.whatsApp{
+    position: fixed;
+    z-index: 1000;
+    bottom: 50px;
+    right: 75px;
+    a{
+        img{
+            width: 80px;
+            height: 80px;
+            background-color: #25D366; /* color WhatsApp */
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* sombra */
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            border-radius: 50%;
+            &:hover {
+                box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .bloque-principal{
+        padding-top: 100px;
+        .menu-navegacion{
+            position: fixed;
+            .tam-contenedor{
+                .info-perfil{
+                    .perfil{
+                        margin-right: 0;
+                    }
+                }
+                .barra-navegacion{
+                    display: none;
+                    .opciones-btn{
+                        .enlaces{
+                            justify-content: end;
+
+                            li{
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .quien-soy{
+            background-image: none;
+            background-color: rgba(234, 211, 255, 1);          
+            .imagen-texto{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+                .imagen-princ{
+                    //width: 100%;
+                    margin-left: 0;
+                    display: block;
+                    width: auto;
+                    padding: 10px;
+                    height: auto;
+                    img{
+                        width: 300px;
+                        height: 300px;
+                    }
+                }
+                .text-slider{
+                    width: 100%;
+                    .text-princ{
+                        height: auto;
+                        .slider-2{
+                            h1{
+                                font-size: 36px;
+                            }
+                            p{
+                                margin-top: 10px;
+                                font-weight: 200;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            
+        }
+
+        .experiencia{
+            .contenedor{
+                .seleccion-exp{
+                    width: auto;
+                }
+            }
+        }
+
+        .proyectos{
+            .contenedor{
+                .tit-seccion{
+                    h1{
+                        text-align: center;
+                    }
+                }
+                .slider-projects{
+                    .btn-prev,
+                    .btn-next {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .herramientas{
+            .contenedor{
+                display: block;
+            }
+        }
+
+        .habilidades{
+            .contenedor{
+                .conjunto-habilidad{
+                    .habilidad{
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    .whatsApp{
+            bottom: 70px;
+            right: 35px;
+        }
+    }
