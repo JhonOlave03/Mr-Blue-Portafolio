@@ -127,7 +127,13 @@ body.modo-oscuro .proyectos .contenedor .slider-projects .btn-next:hover {
 body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta .tit-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .tit-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-0 .tit-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .tit-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-1 .tit-proyecto,
 body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .tit-proyecto,
 .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-2 .tit-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .tit-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-3 .tit-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .tit-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-4 .tit-proyecto {
-  color: white;
+  color: rgb(36, 5, 65);
+  text-align: center;
+}
+body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta .parrafo-proyecto p, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .parrafo-proyecto p, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-0 .parrafo-proyecto p, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .parrafo-proyecto p, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-1 .parrafo-proyecto p,
+body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .parrafo-proyecto p,
+.bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-2 .parrafo-proyecto p, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .parrafo-proyecto p, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-3 .parrafo-proyecto p, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .parrafo-proyecto p, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-4 .parrafo-proyecto p {
+  color: rgb(36, 5, 65);
 }
 body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta .btn-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto,
 body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto,
@@ -137,13 +143,13 @@ body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarj
 body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta .btn-proyecto:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto:hover,
 body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto:hover,
 .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto:hover {
-  border: 2px solid white;
+  border: 2px solid #8D2CE9;
   background-color: transparent;
 }
 body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta .btn-proyecto:hover a:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto:hover a:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-0 .btn-proyecto:hover a:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto:hover a:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-1 .btn-proyecto:hover a:hover,
 body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto:hover a:hover,
 .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-2 .btn-proyecto:hover a:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto:hover a:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-3 .btn-proyecto:hover a:hover, body.modo-oscuro .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto:hover a:hover, .bloque-principal body.modo-oscuro .proyectos .contenedor .slider-projects .tarjeta-4 .btn-proyecto:hover a:hover {
-  color: white;
+  color: #8D2CE9;
 }
 body.modo-oscuro .proyectos .contenedor .slider-indicadores .indicador {
   background-color: white;
@@ -257,6 +263,10 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   color: white;
   filter: invert(1);
   transition: filter 0.3s ease;
+  transition: transform 0.3s ease;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .modo-dn .btn-dn img:hover {
+  transform: rotate(20deg);
 }
 .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .modo-dn .btn-dn img:hover {
   filter: invert(63%) sepia(45%) saturate(350%) hue-rotate(180deg);
@@ -476,16 +486,15 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
 .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-2,
 .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-2, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-3, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-3, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-3, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-3, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-4, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-4, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-4, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-4 {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  width: 250px;
-  height: 350px;
   border: 2px solid #5B179A;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 380px;
+  max-width: 300px;
 }
 .bloque-principal .experiencia .contenedor .bloques-experiencia .tarjeta .cargo-empresa, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-0 .cargo-empresa, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-0 .cargo-empresa, .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa, .bloque-principal .proyectos .experiencia .contenedor .bloques-experiencia .slider-projects .tarjeta-1 .cargo-empresa, .bloque-principal .experiencia .proyectos .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa, .bloque-principal .proyectos .experiencia .contenedor .slider-projects .bloques-experiencia .tarjeta-1 .cargo-empresa,
 .bloque-principal .experiencia .proyectos .contenedor .bloques-experiencia .slider-projects .tarjeta-2 .cargo-empresa,
@@ -648,34 +657,35 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   background-color: rgb(36, 5, 65);
 }
 .bloque-principal .proyectos .contenedor .slider-projects .btn-prev {
-  left: -30px;
+  left: 30px;
 }
 .bloque-principal .proyectos .contenedor .slider-projects .btn-next {
-  right: -30px;
+  right: 30px;
 }
 .bloque-principal .proyectos .contenedor .slider-projects .tarjeta, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1,
 .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  width: 350px;
-  height: 450px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 10px;
-  padding-left: 10px;
+  width: 300px;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  background-color: white;
 }
 .bloque-principal .proyectos .contenedor .slider-projects .tarjeta .img-proy, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .img-proy, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .img-proy,
 .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .img-proy, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .img-proy, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .img-proy {
-  width: 350px;
-  height: 300px;
+  width: 100%;
+  height: 200px;
   padding: 0 8px;
 }
 .bloque-principal .proyectos .contenedor .slider-projects .tarjeta .img-proy img, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .img-proy img, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .img-proy img,
 .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .img-proy img, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .img-proy img, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .img-proy img {
-  width: 350px;
-  height: 250px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 .bloque-principal .proyectos .contenedor .slider-projects .tarjeta .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .tit-proyecto,
@@ -962,10 +972,11 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   flex-direction: column;
   padding: 10px;
   margin: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 .bloque-principal .contacto .contenedor .logo-contacto .redes-sociales .paq-habilidad img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 }
 
@@ -1068,6 +1079,27 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   .bloque-principal .proyectos .contenedor .slider-projects .btn-next {
     display: none;
   }
+  .bloque-principal .proyectos .contenedor .slider-projects .tarjeta, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1,
+  .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 {
+    margin: 25px 0;
+  }
+  .bloque-principal .proyectos .contenedor .slider-projects .tarjeta .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .tit-proyecto,
+  .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .tit-proyecto {
+    padding: 35px;
+  }
+  .bloque-principal .proyectos .contenedor .slider-projects .tarjeta .tit-proyecto h3, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .tit-proyecto h3, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .tit-proyecto h3,
+  .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .tit-proyecto h3, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .tit-proyecto h3, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .tit-proyecto h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+  .bloque-principal .proyectos .contenedor .slider-projects .tarjeta .parrafo-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .parrafo-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .parrafo-proyecto,
+  .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .parrafo-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .parrafo-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .parrafo-proyecto {
+    padding: 20px;
+  }
+  .bloque-principal .proyectos .contenedor .slider-projects .tarjeta .parrafo-proyecto p, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .parrafo-proyecto p, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .parrafo-proyecto p,
+  .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .parrafo-proyecto p, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .parrafo-proyecto p, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .parrafo-proyecto p {
+    font-size: 12px;
+  }
   .bloque-principal .herramientas .contenedor {
     display: block;
   }
@@ -1077,6 +1109,10 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   .whatsApp {
     bottom: 70px;
     right: 35px;
+  }
+  .whatsApp a {
+    width: 50px;
+    height: 50px;
   }
 }
 
