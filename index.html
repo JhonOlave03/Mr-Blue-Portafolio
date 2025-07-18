@@ -547,6 +547,89 @@
         </a>
     </div>
     <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sliders = document.querySelectorAll('.text-princ > div'); // slider-1, slider-2
+            const dots = document.querySelectorAll('.marcadores .circulos');
+            let currentIndex = 0;
+            let autoSlideInterval;
+            let startX = 0;
+            let isDragging = false;
+
+            function showSlide(index) {
+                sliders.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+                });
+                dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+                });
+                currentIndex = index;
+            }
+
+            function nextSlide() {
+                const nextIndex = (currentIndex + 1) % sliders.length;
+                showSlide(nextIndex);
+            }
+
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 4000);
+            }
+
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+
+            // Inicializar
+            showSlide(0);
+            startAutoSlide();
+
+            // Eventos para swipe / drag
+            const sliderContainer = document.querySelector('.text-slider');
+
+            sliderContainer.addEventListener('mousedown', (e) => {
+                stopAutoSlide();
+                isDragging = true;
+                startX = e.clientX;
+            });
+
+            sliderContainer.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                const diff = e.clientX - startX;
+                if (diff > 50) { // mover a la izquierda
+                isDragging = false;
+                showSlide((currentIndex - 1 + sliders.length) % sliders.length);
+                startAutoSlide();
+                } else if (diff < -50) { // mover a la derecha
+                isDragging = false;
+                nextSlide();
+                startAutoSlide();
+                }
+            });
+
+            sliderContainer.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+
+            // Eventos para pantallas táctiles
+            sliderContainer.addEventListener('touchstart', (e) => {
+                stopAutoSlide();
+                startX = e.touches[0].clientX;
+            });
+
+            sliderContainer.addEventListener('touchmove', (e) => {
+                const diff = e.touches[0].clientX - startX;
+                if (diff > 50) {
+                showSlide((currentIndex - 1 + sliders.length) % sliders.length);
+                startAutoSlide();
+                } else if (diff < -50) {
+                nextSlide();
+                startAutoSlide();
+                }
+            });
+
+        });
+    </script>
+
+    <script>
         document.addEventListener("DOMContentLoaded", () => {
             const botonModo = document.querySelector(".btn-dn");
             const iconoModo = botonModo.querySelector("img");
