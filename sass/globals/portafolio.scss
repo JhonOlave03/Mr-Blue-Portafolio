@@ -288,6 +288,9 @@ body.modo-oscuro {
                                 margin-right: 30px;
                                 list-style: none;
                                 padding-right: 15px;
+                                padding-bottom: 5px;
+                                position: relative; // Necesario para posicionar el submenu
+                                
                                 a{
                                     color: white;
                                     text-decoration: none;
@@ -302,6 +305,46 @@ body.modo-oscuro {
                                         border-right: 2px solid #BBCCFF;
                                         transform: scale(1.25);
                                     }
+                                }
+                                
+                                // Submenu desplegable
+                                .enlaces {
+                                    display: none;
+                                    position: absolute;
+                                    // Sin hueco respecto al <li>: si hay espacio entre el enlace y el submenú,
+                                    // el cursor deja el li y :hover se pierde (el menú se cierra).
+                                    top: 100%;
+                                    left: 0;
+                                    flex-direction: column;
+                                    background-color: $color-principal;
+                                    border-radius: 5px;
+                                    padding: 10px 0;
+                                    min-width: 200px;
+                                    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+                                    margin-top: 0;
+                                    z-index: 1001;
+                                    
+                                    li {
+                                        margin: 0;
+                                        padding: 10px 20px;
+                                        border-right: none;
+                                        
+                                        a {
+                                            border-right: none;
+                                            padding-right: 0;
+                                            font-size: 15px;
+                                            
+                                            &:hover {
+                                                transform: none;
+                                                color: #BBCCFF;
+                                                border-right: none;
+                                            }
+                                        }
+                                    }
+                                }
+                                
+                                &:hover > .enlaces {
+                                    display: flex;
                                 }
                             }
                         }

@@ -234,6 +234,8 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   margin-right: 30px;
   list-style: none;
   padding-right: 15px;
+  padding-bottom: 5px;
+  position: relative;
 }
 .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li a {
   color: white;
@@ -249,6 +251,38 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   color: #BBCCFF; /* Cambia color al hacer hover sobre el enlace */
   border-right: 2px solid #BBCCFF;
   transform: scale(1.25);
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li .enlaces {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  flex-direction: column;
+  background-color: rgb(36, 5, 65);
+  border-radius: 5px;
+  padding: 10px 0;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  margin-top: 0;
+  z-index: 1001;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li .enlaces li {
+  margin: 0;
+  padding: 10px 20px;
+  border-right: none;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li .enlaces li a {
+  border-right: none;
+  padding-right: 0;
+  font-size: 15px;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li .enlaces li a:hover {
+  transform: none;
+  color: #BBCCFF;
+  border-right: none;
+}
+.bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li:hover > .enlaces {
+  display: flex;
 }
 .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .modo-dn {
   margin-left: -20px;
