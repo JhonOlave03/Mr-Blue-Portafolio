@@ -1,0 +1,46 @@
+# Requiere: repositorio → Settings → Pages → Build and deployment: Source = GitHub Actions
+# Secret: Settings → Secrets and variables → Actions → name WEB3FORMS_ACCESS_KEY, value = tu clave
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar
+        uses: actions/checkout@v4
+      - name: Inyectar clave Web3Forms en el artefacto
+        env:
+          W3F: ${{ secrets.WEB3FORMS_ACCESS_KEY }}
+        run: |
+          if [ -z "$W3F" ]; then
+            echo "No hay secret WEB3FORMS_ACCESS_KEY: dejá js/web3forms-config.js rellenado a mano o añadí el secret y volvé a publicar"
+            echo "Sigue el build; si la clave está en el .js, el formulario funcionará."
+            exit 0
+          fi
+          mkdir -p js
+          printf "window.__WEB3FORMS_ACCESS_KEY__ = '%s';\n" "$W3F" > js/web3forms-config.js
+      - name: Armar y subir
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "."
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v4

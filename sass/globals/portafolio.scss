@@ -182,6 +182,11 @@ body.modo-oscuro {
        
     }
 
+    // Página /servicios: no tapar el degradado del body con un color sólido
+    .servicios {
+        background: transparent;
+    }
+
     .herramientas{
         .contenedor{
             .lenguaje-tecnologia{
