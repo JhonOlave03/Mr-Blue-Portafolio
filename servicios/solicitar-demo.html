@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitar demo — Mr Blue</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="modo-oscuro">
+    <div class="bloque-principal">
+        <header class="menu-navegacion">
+            <div class="tam-contenedor">
+                <div class="info-perfil">
+                    <div class="perfil">
+                        <a href="../index.html#quien-soy">
+                            <img src="../imagen/perfil.jpg" alt="img-perfil">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <h4>Jhon Olave</h4>
+                        <h5>Ingeniero en Multimedia</h5>
+                    </div>
+                </div>
+                <nav class="barra-navegacion">
+                    <div class="opciones-btn">
+                        <ul class="enlaces">
+                            <li class="opcion">
+                                <a href="../index.html">Inicio</a>
+                            </li>
+                            <li class="opcion">
+                                <a href="index.html">Servicios</a>
+                            </li>
+                            <li class="opcion">
+                                <a href="../index.html#experiencia">Experiencia</a>
+                            </li>
+                            <li class="opcion">
+                                <a href="../index.html#proyectos">Proyectos</a>
+                            </li>
+                            <li class="opcion">
+                                <a href="../index.html#herramientas">Herramientas</a>
+                            </li>
+                            <li class="opcion">
+                                <a href="index.html#contacto">Contáctame</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modo-dn">
+                        <button class="btn-dn" aria-label="Cambiar a modo oscuro">
+                            <img src="../imagen/luna (2).png" alt="Modo oscuro/claro" class="m-dia m-noche">
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <section class="demo-solicitud" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+            <div class="contenedor">
+                <p class="demo-solicitud__volver">
+                    <a href="index.html">← Volver a servicios</a>
+                </p>
+                <div class="demo-solicitud__card">
+                    <h1 class="demo-solicitud__titulo">Solicitar demo</h1>
+                    <p class="demo-solicitud__subtitulo" id="demo-servicio-label">Completá el formulario; te respondo pronto.</p>
+
+                    <form
+                        class="form-demo"
+                        id="form-demo"
+                        action="https://formsubmit.co/jbolave1997@gmail.com"
+                        method="POST"
+                    >
+                        <input type="hidden" name="_subject" id="form-demo-subject" value="Nueva solicitud de demo — Mr Blue">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="servicio" id="form-demo-servicio" value="">
+                        <input type="hidden" name="_next" id="form-demo-next" value="">
+                        <input type="text" name="_honey" class="form-demo__honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                        <div class="form-demo__fila form-demo__fila--2">
+                            <div class="form-demo__grupo">
+                                <label for="demo-nombre">Nombre</label>
+                                <input type="text" id="demo-nombre" name="nombre" required autocomplete="given-name" maxlength="80">
+                            </div>
+                            <div class="form-demo__grupo">
+                                <label for="demo-apellido">Apellido</label>
+                                <input type="text" id="demo-apellido" name="apellido" required autocomplete="family-name" maxlength="80">
+                            </div>
+                        </div>
+                        <div class="form-demo__grupo">
+                            <label for="demo-celular">Celular</label>
+                            <input type="tel" id="demo-celular" name="celular" required autocomplete="tel" inputmode="tel" maxlength="40" placeholder="Ej. +57 300 000 0000">
+                        </div>
+                        <div class="form-demo__grupo">
+                            <label for="demo-correo">Correo electrónico</label>
+                            <input type="email" id="demo-correo" name="email" required autocomplete="email" maxlength="120">
+                        </div>
+
+                        <div class="form-demo__checkbox">
+                            <input type="checkbox" id="demo-empresa" name="consulta_empresa" value="Sí">
+                            <label for="demo-empresa">Consulto en nombre de una empresa</label>
+                        </div>
+                        <div class="form-demo__grupo form-demo__grupo--empresa" id="grupo-empresa" hidden>
+                            <label for="demo-nombre-empresa">Nombre de la empresa <span class="form-demo__req" aria-hidden="true">*</span></label>
+                            <input type="text" id="demo-nombre-empresa" name="nombre_empresa" autocomplete="organization" maxlength="120">
+                        </div>
+
+                        <div class="btn-proyecto form-demo__enviar">
+                            <button type="submit">solicitar Demo</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="contacto" id="contacto">
+            <div class="contenedor">
+                <div class="logo-contacto">
+                    <div class="redes-sociales">
+                        <div class="paq-habilidad">
+                            <a href="mailto:jbolave1997@gmail.com?subject=Hola%20Jhon&body=Me%20gustó%20tu%20portafolio,%20me%20gustaría%20hablar%20contigo." target="_blank"><img src="../imagen/contacto/mail.jpg" alt="tecno1" class="icono-contacto icono-morado"></a>
+                        </div>
+                        <div class="paq-habilidad">
+                            <a href="https://www.linkedin.com/in/jhon-brayan-olave-riascos-156026287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="../imagen/contacto/in.png" alt="tecno1" class="icono-contacto icono-morado"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="whatsApp">
+        <a href="https://api.whatsapp.com/send/?phone=573028152310&text&type=phone_number&app_absent=0" target="_blank">
+            <img src="../imagen/contacto/whatsapp.png" alt="boton de whatzapp">
+        </a>
+    </div>
+
+    <script>
+        (function () {
+            const SERVICIOS = {
+                'ing-prompt-que-obtienes': 'Ingeniería de Prompt — Qué obtienes',
+                'ing-prompt-donde': 'Ingeniería de Prompt — Dónde lo aplicas',
+                'ing-prompt-antes-despues': 'Ingeniería de Prompt — Antes y después (comparación)',
+                'ag-rag': 'Agentes de IA — Agentes RAG',
+                'ag-orq': 'Agentes de IA — Agentes Orquestadores',
+                'ag-rag-orq': 'Agentes de IA — RAG + Orquestación',
+                'md-lograr': 'Modelos de IA — ¿Qué puedes lograr?',
+                'md-problema': 'Modelos de IA — Problema actual',
+                'md-resultados': 'Modelos de IA — Resultados',
+            };
+            const params = new URLSearchParams(window.location.search);
+            const slug = params.get('s') || '';
+            const servicio = SERVICIOS[slug] || 'Solicitud de demo (servicio no identificado; revisar enlace o referencia)';
+            const sub = document.getElementById('demo-servicio-label');
+            const inputServicio = document.getElementById('form-demo-servicio');
+            const subj = document.getElementById('form-demo-subject');
+            const next = document.getElementById('form-demo-next');
+            if (sub) sub.textContent = 'Solicitás demo para: ' + servicio;
+            if (inputServicio) inputServicio.value = servicio;
+            if (subj) subj.value = 'Nueva demo — ' + servicio;
+            if (next) {
+                try {
+                    next.value = new URL('index.html?gracias=1', window.location.href).href;
+                } catch (e) {
+                    next.value = 'index.html?gracias=1';
+                }
+            }
+
+            const chk = document.getElementById('demo-empresa');
+            const wrap = document.getElementById('grupo-empresa');
+            const inputEmp = document.getElementById('demo-nombre-empresa');
+            function syncEmpresa() {
+                const on = chk && chk.checked;
+                if (wrap) {
+                    wrap.hidden = !on;
+                    if (inputEmp) {
+                        inputEmp.toggleAttribute('required', !!on);
+                        if (!on) {
+                            inputEmp.value = '';
+                            inputEmp.removeAttribute('aria-invalid');
+                        }
+                    }
+                }
+            }
+            if (chk) {
+                chk.addEventListener('change', syncEmpresa);
+                syncEmpresa();
+            }
+        })();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const botonModo = document.querySelector(".btn-dn");
+            if (!botonModo) return;
+            const iconoModo = botonModo.querySelector("img");
+            if (!iconoModo) return;
+            botonModo.addEventListener("click", () => {
+                const bodyTieneModoOscuro = document.body.classList.toggle("modo-oscuro");
+                if (bodyTieneModoOscuro) {
+                    iconoModo.src = "../imagen/sol.png";
+                    iconoModo.alt = "Modo día";
+                } else {
+                    iconoModo.src = "../imagen/luna (2).png";
+                    iconoModo.alt = "Modo noche";
+                }
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+</body>
+</html>

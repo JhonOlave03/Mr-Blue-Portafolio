@@ -30,15 +30,11 @@
                 <nav class="barra-navegacion">
                     <div class="opciones-btn">
                         <ul class="enlaces">
-                            <li class="opcion"><a href="./rag/index.html">Servicios</a>
-                                <ul class="enlaces">
-                                    <li>
-                                        <a href="./chatbots/index.html">Agente Orquestador</a>
-                                    </li>
-                                    <li>
-                                        <a href="./rag/index.html">RAG</a>
-                                    </li>
-                                </ul>
+                            <li class="opcion">
+                                <a href="index.html">Inicio</a>
+                            </li>
+                            <li class="opcion">
+                                <a href="./servicios/index.html">Servicios</a>
                             </li>
                             <li class="opcion">
                                 <a href="#experiencia">Experiencia</a>
@@ -455,6 +451,29 @@
                             </div>
                         </div>
                     </div>
+                    <div class="tarjeta tarjeta-5">
+                        <div class="img-proy">
+                            <img src="./imagen/proyectos/proyecto-agentes-guarderia.png" alt="Proyecto con agentes de IA y visual estilo ChatGPT">
+                        </div>
+                        <div class="tit-proyecto">
+                            <h3>
+                                Agentes de IA para actividades en guarderías
+                            </h3>
+                        </div>
+                        <div class="parrafo-proyecto">
+                            <p>
+                                Desarrollo de tres agentes de inteligencia artificial: dos dedicados a crear actividades exploratorias
+                                y de estimulación del pensamiento lógico y abstracto para niños de guardería, y un tercero orientado
+                                a generar imágenes que complementen esas actividades, alineado al contexto educativo.
+                            </p>
+                        </div>
+                        <div class="img-proyectos">
+                            <div class="grupo1">
+                                <div class="asesorio"><img src="./imagen/tecnologías/wp.png" alt="WordPress"> <P>WP</P></div>
+                                <div class="asesorio"><img src="./imagen/tecnologías/py.png" alt="Python"> <P>Python</P></div>
+                            </div>
+                        </div>
+                    </div>
                     <button class="btn-next">&gt;</button>
                 </div>
                 <div class="slider-indicadores"></div>
@@ -699,44 +718,52 @@
    
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const tarjetas = document.querySelectorAll('.slider-projects .tarjeta');
-            const btnPrev = document.querySelector('.btn-prev');
-            const btnNext = document.querySelector('.btn-next');
+            const contenedorSlider = document.querySelector('.proyectos .contenedor .slider-projects');
+            const tarjetas = document.querySelectorAll('.proyectos .slider-projects .tarjeta');
+            const btnPrev = document.querySelector('.proyectos .slider-projects .btn-prev');
+            const btnNext = document.querySelector('.proyectos .slider-projects .btn-next');
             const groupSize = 3;
             const totalCards = tarjetas.length;
             let startIndex = 0;
-            let sliderInterval;
+            let sliderInterval = null;
+            if (!contenedorSlider || !totalCards) {
+                return;
+            }
 
             const contenedorIndicadores = document.querySelector('.slider-indicadores');
             const verTodosBtn = document.querySelector('.ver-todos button');
-            const sliderButtons = document.querySelectorAll('.slider-projects .btn-prev, .slider-projects .btn-next');
-
-            for (let i = 0; i < totalCards; i++) {
-                const indicador = document.createElement('div');
-                indicador.classList.add('indicador');
-                indicador.dataset.index = i;
-                contenedorIndicadores.appendChild(indicador);
+            const sliderButtons = document.querySelectorAll('.proyectos .slider-projects .btn-prev, .proyectos .slider-projects .btn-next');
+            if (contenedorIndicadores && totalCards) {
+                for (let i = 0; i < totalCards; i++) {
+                    const indicador = document.createElement('div');
+                    indicador.classList.add('indicador');
+                    indicador.dataset.index = i;
+                    contenedorIndicadores.appendChild(indicador);
+                }
             }
 
             const indicadores = document.querySelectorAll('.slider-indicadores .indicador');
+            if (btnPrev) btnPrev.style.order = '0';
+            if (btnNext) btnNext.style.order = '20';
 
             function updateSlider() {
                 tarjetas.forEach(t => {
                     t.style.display = 'none';
+                    t.style.removeProperty('order');
                     t.classList.remove('active', 'left', 'center', 'right');
                 });
 
                 for (let i = 0; i < groupSize; i++) {
                     const index = (startIndex + i) % totalCards;
-                    tarjetas[index].style.display = 'flex';
-                    tarjetas[index].classList.add('active'); // Add active class to visible cards
+                    const el = tarjetas[index];
+                    el.style.display = 'flex';
+                    el.style.order = String(1 + i);
+                    el.classList.add('active');
                 }
 
-                // Update active indicator
-                indicadores.forEach((dot, idx) => {
+                indicadores.forEach((dot) => {
                     dot.classList.remove('activo');
                 });
-                // The active indicator should correspond to the startIndex
                 if (indicadores[startIndex]) {
                     indicadores[startIndex].classList.add('activo');
                 }
@@ -752,13 +779,17 @@
                 updateSlider();
             }
 
-            function iniciarSlider() {
-                updateSlider();
-                sliderInterval = setInterval(nextSlide, 5000);
+            function detenerSlider() {
+                if (sliderInterval != null) {
+                    clearInterval(sliderInterval);
+                    sliderInterval = null;
+                }
             }
 
-            function detenerSlider() {
-                clearInterval(sliderInterval);
+            function iniciarSlider() {
+                detenerSlider();
+                updateSlider();
+                sliderInterval = setInterval(nextSlide, 5000);
             }
 
             // Initial setup
@@ -785,6 +816,7 @@
                     tarjetas.forEach(t => {
                         t.style.display = 'flex';
                         t.classList.add('active');
+                        t.style.removeProperty('order');
                     });
                     verTodosBtn.style.display = 'none';
                     contenedorIndicadores.style.display = 'none'; // Hide indicators

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Blue Portafolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kameron:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Junge&family=Kameron:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="modo-oscuro">
+    <div class="bloque-principal">
+        <header class="menu-navegacion">
+            <div class="tam-contenedor">
+                <div class="info-perfil">
+                    <div class="perfil">
+                        <a href="../index.html#quien-soy">
+                            <img src="../imagen/perfil.jpg" alt="img-perfil">
+                        </a>
+                    </div>
+                    <div class="info">
+                        <h4>Jhon Olave</h4>
+                        <h5>Ingeniero en Multimedia</h5>
+                    </div>
+                </div>
+                <nav class="barra-navegacion">
+                    <div class="opciones-btn">
+                        <ul class="enlaces">
+                            <li class="opcion">
+                                <a href="../index.html">Inicio</a>
+                            </li>
+                            <li class="opcion">
+                                <a href="index.html">Servicios</a>
+                            </li>
+                            <li class="opcion">
+                                <a href="../index.html#experiencia">Experiencia</a>
+                            </li>
+                            <li class="opcion">
+                                <a href="../index.html#proyectos">Proyectos</a>
+                            </li>
+                            <li class="opcion">
+                                <a href="../index.html#herramientas">Herramientas</a>
+                            </li>
+                            <li class="opcion">
+                                <a href="#contacto">Contáctame</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modo-dn">
+                        <button class="btn-dn" aria-label="Cambiar a modo oscuro">
+                            <img src="../imagen/luna (2).png" alt="Modo oscuro/claro" class="m-dia m-noche">
+                        </button>   
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="video">
+            <div class="video">
+                <div class="servicios_video">
+                    <video src="../videos/portafolio-servicios.mp4" controls autoplay muted></video>
+                </div>
+            </div>
+        </section>
+        <section class="servicios" id="servicios1" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="300" data-aos-once="true">
+            <div class="contenedor">
+                <p class="demo-gracias" id="aviso-gracias" role="status" hidden>¡Mensaje enviado! Te respondo pronto.</p>
+                <div class="seleccion-servicios">
+                    <button type="button" class="elegir-servicio active" data-servicio="ingenieria-prompt">Ingeniería de Prompt</button>
+                    <button type="button" class="elegir-servicio" data-servicio="agentes-ia">Agentes de IA</button>
+                    <button type="button" class="elegir-servicio" data-servicio="entrenamiento-modelos-ia">Modelos de IA</button>
+                </div>
+                <div class="panel-servicio ingenieria-prompt active" data-servicio-panel="ingenieria-prompt" data-aos="fade" data-aos-duration="1500" data-aos-delay="100">
+                    <div class="prompting-panel">
+                        <div class="prompting-intro">
+                            <p>Convierte la IA en una herramienta confiable que realmente trabaja para tu negocio, no en algo impredecible que te hace perder tiempo.</p>
+                        </div>
+                        <div class="prompting-tarjetas">
+                            <article class="prompting-subtarjeta">
+                                <h3 class="prompting-subtarjeta__titulo">Qué obtienes</h3>
+                                <ul class="prompting-subtarjeta__lista">
+                                    <li>Respuestas claras, estructuradas y listas para usar</li>
+                                    <li>Control total sobre lo que la IA dice y cómo lo dice</li>
+                                    <li>Uso rápido sin prueba y error constante</li>
+                                    <li>Plantillas listas para tu equipo</li>
+                                </ul>
+                                <div class="btn-proyecto prompting-subtarjeta__btn">
+                                    <a href="solicitar-demo.html?s=ing-prompt-que-obtienes">Solicitar Demo</a>
+                                </div>
+                            </article>
+                            <article class="prompting-subtarjeta">
+                                <h3 class="prompting-subtarjeta__titulo">Dónde lo aplicas</h3>
+                                <ul class="prompting-subtarjeta__lista">
+                                    <li>Atención al cliente</li>
+                                    <li>Generación de contenido</li>
+                                    <li>Calificación de leads</li>
+                                    <li>Soporte a ventas y operaciones</li>
+                                </ul>
+                                
+                                <div class="btn-proyecto prompting-subtarjeta__btn">
+                                    <a href="solicitar-demo.html?s=ing-prompt-donde">Solicitar Demo</a>
+                                </div>
+                            </article>
+                            <article class="prompting-subtarjeta">
+                                <div class="prompting-antes-despues">
+                                    <div class="prompting-antes-despues__col">
+                                        <h4 class="prompting-antes-despues__tit">Antes:</h4>
+                                        <ul class="prompting-subtarjeta__lista prompting-subtarjeta__lista--anidada">
+                                            <li>Respuestas inconsistentes</li>
+                                            <li>Mucho ensayo y error</li>
+                                            <li>Pérdida de tiempo</li>
+                                        </ul>
+                                    </div>
+                                    <div class="prompting-antes-despues__col">
+                                        <h4 class="prompting-antes-despues__tit">Después:</h4>
+                                        <ul class="prompting-subtarjeta__lista prompting-subtarjeta__lista--anidada">
+                                            <li>Resultados predecibles y útiles</li>
+                                            <li>IA alineada a tu negocio</li>
+                                            <li>Ahorro real de tiempo</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btn-proyecto prompting-subtarjeta__btn">
+                                    <a href="solicitar-demo.html?s=ing-prompt-antes-despues">Solicitar Demo</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-servicio agentes-ia" data-servicio-panel="agentes-ia">
+                    <div class="agentes-panel">
+                        <div class="agentes-intro">
+                            <p>Atiende a todos tus clientes al instante, sin aumentar tu equipo.</p>
+                            <p>Automatiza respuestas, reduce carga operativa y no pierdas oportunidades por demoras.</p>
+                        </div>
+                        <div class="agentes-tarjetas">
+                            <article class="agentes-subtarjeta">
+                                <h3 class="agentes-subtarjeta__titulo">Agentes RAG</h3>
+                                <ul class="agentes-subtarjeta__lista">
+                                    <li>Responden con información real de tu negocio (no respuestas genéricas)</li>
+                                    <li>Atiende más clientes sin contratar más personal</li>
+                                    <li>Actualiza la información cuando quieras</li>
+                                </ul>
+                                <div class="btn-proyecto agentes-subtarjeta__btn">
+                                    <a href="solicitar-demo.html?s=ag-rag">Solicitar Demo</a>
+                                </div>
+                            </article>
+                            <article class="agentes-subtarjeta">
+                                <h3 class="agentes-subtarjeta__titulo">Agentes Orquestadores</h3>
+                                <p class="agentes-subtarjeta__texto">Automatizan tareas completas por ti: agendan citas, registran leads y conectan tus sistemas.</p>
+                                <ul class="agentes-subtarjeta__lista">
+                                    <li>Menos trabajo manual</li>
+                                    <li>Procesos más rápidos</li>
+                                    <li>Tu equipo enfocado en lo importante</li>
+                                </ul>
+                                <div class="btn-proyecto agentes-subtarjeta__btn">
+                                    <a href="solicitar-demo.html?s=ag-orq">Solicitar Demo</a>
+                                </div>
+                            </article>
+                            <article class="agentes-subtarjeta">
+                                <h3 class="agentes-subtarjeta__titulo">RAG + Orquestación</h3>
+                                <p class="agentes-subtarjeta__texto">Responde como experto en tu negocio y actúa automáticamente.</p>
+                                <ul class="agentes-subtarjeta__lista">
+                                    <li>Atiende, filtra y registra clientes en segundos</li>
+                                    <li>Evita perder ventas por demoras</li>
+                                    <li>Convierte conversaciones en resultados</li>
+                                </ul>
+                                <div class="btn-proyecto agentes-subtarjeta__btn">
+                                    <a href="solicitar-demo.html?s=ag-rag-orq">Solicitar Demo</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>  
+                <div class="panel-servicio entrenamiento-modelos-ia" data-servicio-panel="entrenamiento-modelos-ia">
+                    <div class="modelos-panel">
+                        <div class="modelos-intro">
+                            <p>Convierte tus datos en decisiones inteligentes y deja de operar a ciegas.</p>
+                        </div>
+                        <div class="modelos-tarjetas">
+                            <article class="modelos-subtarjeta">
+                                <h3 class="modelos-subtarjeta__titulo">¿Qué puedes lograr?</h3>
+                                <ul class="modelos-subtarjeta__lista">
+                                    <li>Predecir ventas, demanda o abandono de clientes</li>
+                                    <li>Detectar riesgos antes de que ocurran</li>
+                                    <li>Automatizar análisis que hoy haces manualmente</li>
+                                    <li>Identificar oportunidades ocultas en tus datos</li>
+                                </ul>
+                                <div class="btn-proyecto modelos-subtarjeta__btn">
+                                    <a href="solicitar-demo.html?s=md-lograr">Solicitar Demo</a>
+                                </div>
+                            </article>
+                            <article class="modelos-subtarjeta">
+                                <h3 class="modelos-subtarjeta__titulo">Problema actual</h3>
+                                <ul class="modelos-subtarjeta__lista">
+                                    <li>Tienes datos, pero no los usas</li>
+                                    <li>Tomas decisiones por intuición</li>
+                                    <li>Detectas problemas demasiado tarde</li>
+                                </ul>
+                                <div class="btn-proyecto modelos-subtarjeta__btn">
+                                    <a href="solicitar-demo.html?s=md-problema">Solicitar Demo</a>
+                                </div>
+                            </article>
+                            <article class="modelos-subtarjeta">
+                                <h3 class="modelos-subtarjeta__titulo">Resultados</h3>
+                                <ul class="modelos-subtarjeta__lista">
+                                    <li>Decisiones basadas en datos, no suposiciones</li>
+                                    <li>Anticipación de escenarios clave</li>
+                                    <li>Reducción de pérdidas y errores</li>
+                                    <li>Optimización de recursos</li>
+                                </ul>
+                                <div class="btn-proyecto modelos-subtarjeta__btn">
+                                    <a href="solicitar-demo.html?s=md-resultados">Solicitar Demo</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+        <footer class="contacto" id="contacto">
+            <div class="contenedor">
+                <div class="logo-contacto">
+                    <div class="redes-sociales">
+                        <div class="paq-habilidad">
+                            <a href="mailto:jbolave1997@gmail.com?subject=Hola%20Jhon&body=Me%20gustó%20tu%20portafolio,%20me%20gustaría%20hablar%20contigo." target="_blank"><img src="../imagen/contacto/mail.jpg" alt="tecno1" class="icono-contacto icono-morado"></a>
+                        </div>
+                        <div class="paq-habilidad">
+                            <a href="https://www.linkedin.com/in/jhon-brayan-olave-riascos-156026287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><img src="../imagen/contacto/in.png" alt="tecno1" class="icono-contacto icono-morado"></a>
+                       </div>                     
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="whatsApp">
+        <a href="https://api.whatsapp.com/send/?phone=573028152310&text&type=phone_number&app_absent=0" target="_blank">
+            <img src="../imagen/contacto/whatsapp.png" alt="boton de whatzapp">
+        </a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sliders = document.querySelectorAll('.text-princ > div'); // slider-1, slider-2
+            const dots = document.querySelectorAll('.marcadores .circulos');
+            const sliderContainer = document.querySelector('.text-slider');
+            if (!sliders.length || !sliderContainer) return;
+
+            let currentIndex = 0;
+            let autoSlideInterval;
+            let startX = 0;
+            let isDragging = false;
+
+            function showSlide(index) {
+                sliders.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+                });
+                dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+                });
+                currentIndex = index;
+            }
+
+            function nextSlide() {
+                const nextIndex = (currentIndex + 1) % sliders.length;
+                showSlide(nextIndex);
+            }
+
+            function startAutoSlide() {
+                autoSlideInterval = setInterval(nextSlide, 4000);
+            }
+
+            function stopAutoSlide() {
+                clearInterval(autoSlideInterval);
+            }
+
+            // Inicializar
+            showSlide(0);
+            startAutoSlide();
+
+            // Eventos para swipe / drag
+            sliderContainer.addEventListener('mousedown', (e) => {
+                stopAutoSlide();
+                isDragging = true;
+                startX = e.clientX;
+            });
+
+            sliderContainer.addEventListener('mousemove', (e) => {
+                if (!isDragging) return;
+                const diff = e.clientX - startX;
+                if (diff > 50) { // mover a la izquierda
+                isDragging = false;
+                showSlide((currentIndex - 1 + sliders.length) % sliders.length);
+                startAutoSlide();
+                } else if (diff < -50) { // mover a la derecha
+                isDragging = false;
+                nextSlide();
+                startAutoSlide();
+                }
+            });
+
+            sliderContainer.addEventListener('mouseup', () => {
+                isDragging = false;
+            });
+
+            // Eventos para pantallas táctiles
+            sliderContainer.addEventListener('touchstart', (e) => {
+                stopAutoSlide();
+                startX = e.touches[0].clientX;
+            });
+
+            sliderContainer.addEventListener('touchmove', (e) => {
+                const diff = e.touches[0].clientX - startX;
+                if (diff > 50) {
+                showSlide((currentIndex - 1 + sliders.length) % sliders.length);
+                startAutoSlide();
+                } else if (diff < -50) {
+                nextSlide();
+                startAutoSlide();
+                }
+            });
+
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const botonModo = document.querySelector(".btn-dn");
+            const iconoModo = botonModo.querySelector("img");
+
+            botonModo.addEventListener("click", () => {
+                // Alternar la clase del modo
+                const bodyTieneModoOscuro = document.body.classList.toggle("modo-oscuro");
+
+                // Cambiar la imagen según el modo actual
+                if (bodyTieneModoOscuro) {
+                    iconoModo.src = "../imagen/sol.png";
+                    iconoModo.alt = "Modo día";
+                } else {
+                    iconoModo.src = "../imagen/luna (2).png";
+                    iconoModo.alt = "Modo noche";
+                }
+
+                // Reiniciar animaciones AOS
+                document.querySelectorAll('[data-aos]').forEach(el => {
+                    el.classList.remove('aos-animate');
+                });
+                setTimeout(() => {
+                    document.querySelectorAll('[data-aos]').forEach(el => {
+                        el.classList.add('aos-animate');
+                    });
+                }, 1000);
+            });
+        });
+    </script>
+
+    <script>
+        (function () {
+            try {
+                if (new URLSearchParams(window.location.search).get('gracias') === '1') {
+                    var n = document.getElementById('aviso-gracias');
+                    if (n) {
+                        n.hidden = false;
+                        n.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }
+                    var u = new URL(window.location.href);
+                    u.search = '';
+                    window.history.replaceState(null, '', u.pathname + u.search + (u.hash || ''));
+                }
+            } catch (e) { /* noop */ }
+        })();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const botones = document.querySelectorAll('.elegir-servicio');
+            const bloques = document.querySelectorAll('.panel-servicio');
+
+            botones.forEach(boton => {
+                boton.addEventListener('click', () => {
+                    const idServicio = boton.dataset.servicio;
+
+                    botones.forEach(b => b.classList.remove('active'));
+                    boton.classList.add('active');
+
+                    bloques.forEach(bloque => bloque.classList.remove('active'));
+
+                    const bloqueActivo = document.querySelector(`[data-servicio-panel="${idServicio}"]`);
+                    if (bloqueActivo) {
+                        bloqueActivo.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tarjetas = document.querySelectorAll('.slider-projects .tarjeta');
+            const btnPrev = document.querySelector('.btn-prev');
+            const btnNext = document.querySelector('.btn-next');
+            const contenedorIndicadores = document.querySelector('.slider-indicadores');
+            if (!tarjetas.length || !btnPrev || !btnNext || !contenedorIndicadores) return;
+
+            const groupSize = 3;
+            const totalCards = tarjetas.length;
+            let startIndex = 0;
+            let sliderInterval;
+
+            const verTodosBtn = document.querySelector('.ver-todos button');
+            const sliderButtons = document.querySelectorAll('.slider-projects .btn-prev, .slider-projects .btn-next');
+
+            for (let i = 0; i < totalCards; i++) {
+                const indicador = document.createElement('div');
+                indicador.classList.add('indicador');
+                indicador.dataset.index = i;
+                contenedorIndicadores.appendChild(indicador);
+            }
+
+            const indicadores = document.querySelectorAll('.slider-indicadores .indicador');
+
+            function updateSlider() {
+                tarjetas.forEach(t => {
+                    t.style.display = 'none';
+                    t.classList.remove('active', 'left', 'center', 'right');
+                });
+
+                for (let i = 0; i < groupSize; i++) {
+                    const index = (startIndex + i) % totalCards;
+                    tarjetas[index].style.display = 'flex';
+                    tarjetas[index].classList.add('active'); // Add active class to visible cards
+                }
+
+                // Update active indicator
+                indicadores.forEach((dot, idx) => {
+                    dot.classList.remove('activo');
+                });
+                // The active indicator should correspond to the startIndex
+                if (indicadores[startIndex]) {
+                    indicadores[startIndex].classList.add('activo');
+                }
+            }
+
+            function nextSlide() {
+                startIndex = (startIndex + 1) % totalCards;
+                updateSlider();
+            }
+
+            function prevSlide() {
+                startIndex = (startIndex - 1 + totalCards) % totalCards;
+                updateSlider();
+            }
+
+            function iniciarSlider() {
+                updateSlider();
+                sliderInterval = setInterval(nextSlide, 5000);
+            }
+
+            function detenerSlider() {
+                clearInterval(sliderInterval);
+            }
+
+            // Initial setup
+            iniciarSlider();
+
+            // Event Listeners for navigation buttons
+            btnPrev.addEventListener('click', () => {
+                detenerSlider();
+                prevSlide();
+                iniciarSlider(); // Restart slider after manual navigation
+            });
+
+            btnNext.addEventListener('click', () => {
+                detenerSlider();
+                nextSlide();
+                iniciarSlider(); // Restart slider after manual navigation
+            });
+
+
+            // "Ver todos" button functionality
+            if (verTodosBtn) {
+                verTodosBtn.addEventListener('click', () => {
+                    detenerSlider();
+                    tarjetas.forEach(t => {
+                        t.style.display = 'flex';
+                        t.classList.add('active');
+                    });
+                    verTodosBtn.style.display = 'none';
+                    contenedorIndicadores.style.display = 'none'; // Hide indicators
+                    sliderButtons.forEach(button => { // Hide navigation buttons
+                        button.style.display = 'none';
+                    });
+                });
+            }
+
+            // Click on indicator (optional)
+            indicadores.forEach(indicador => {
+                indicador.addEventListener('click', () => {
+                    detenerSlider();
+                    startIndex = parseInt(indicador.dataset.index);
+                    updateSlider();
+                    iniciarSlider(); // Restart slider after manual navigation
+                });
+            });
+        });
+    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - 100, // ajusta según el alto de tu header
+                    behavior: 'smooth'
+                });
+                }
+            });
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // duración de la animación
+            once: true
+        });
+    </script>
+    <script>
+        window.addEventListener('beforeunload', function () {
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+</html>
