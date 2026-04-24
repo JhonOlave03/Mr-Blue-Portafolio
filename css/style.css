@@ -887,28 +887,141 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   margin: 0.5rem 0 0;
   flex: 0 0 auto;
 }
-.bloque-principal .servicios .contenedor .panel-servicio.ingenieria-prompt .prompting-antes-despues {
+.bloque-principal
+  .servicios
+  .contenedor
+  .panel-servicio.ingenieria-prompt
+  .prompting-subtarjeta.prompting-subtarjeta--comparacion
+  .prompting-antes-despues {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 0.75rem 1rem;
+  align-items: stretch;
+  gap: 0.85rem 1.15rem;
   width: 100%;
-  margin-bottom: 0.25rem;
+  margin: 0 0 0.2rem;
+  padding-top: 0.1rem;
   flex: 1 1 auto;
+  isolation: isolate;
+}
+.bloque-principal
+  .servicios
+  .contenedor
+  .panel-servicio.ingenieria-prompt
+  .prompting-antes-despues::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  width: 2px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, transparent, rgba(141, 44, 233, 0.4), rgba(91, 85, 98, 0.35), transparent);
+  z-index: 0;
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+.bloque-principal .servicios .contenedor .panel-servicio.ingenieria-prompt .prompting-antes-despues__col {
+  position: relative;
+  z-index: 1;
+  padding: 0.9rem 0.75rem 1rem 0.9rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 1px solid rgba(73, 19, 124, 0.1);
+  box-shadow: 0 4px 16px rgba(36, 5, 65, 0.07);
+}
+.bloque-principal
+  .servicios
+  .contenedor
+  .panel-servicio.ingenieria-prompt
+  .prompting-antes-despues__col--antes {
+  background: linear-gradient(160deg, #f5f1fa 0%, #ebe4f2 100%);
+  border-color: rgba(80, 70, 95, 0.2);
+  border-top: 3px solid #7a6f88;
+}
+.bloque-principal
+  .servicios
+  .contenedor
+  .panel-servicio.ingenieria-prompt
+  .prompting-antes-despues__col--despues {
+  background: linear-gradient(160deg, #f4ecfc 0%, #eadcf8 55%, #e0cef5 100%);
+  border-color: rgba(141, 44, 233, 0.22);
+  border-top: 3px solid #8d2ce9;
+  box-shadow: 0 6px 20px rgba(73, 19, 124, 0.1);
 }
 .bloque-principal .servicios .contenedor .panel-servicio.ingenieria-prompt .prompting-antes-despues__tit {
   font-family: "kameron", serif;
   color: #49137c;
-  font-size: clamp(1.12rem, 1rem + 0.3vw, 1.25rem);
+  font-size: clamp(1.18rem, 1.05rem + 0.4vw, 1.4rem);
   font-weight: 700;
-  margin: 0 0 0.4rem;
+  margin: 0 0 0.6rem;
+  line-height: 1.2;
   text-align: left;
+  letter-spacing: 0.02em;
+}
+.bloque-principal
+  .servicios
+  .contenedor
+  .panel-servicio.ingenieria-prompt
+  .prompting-antes-despues__tit
+  span {
+  display: inline-block;
+  padding: 0.28rem 0.7rem 0.32rem;
+  border-radius: 999px;
+  font-size: 0.92em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.bloque-principal
+  .servicios
+  .contenedor
+  .panel-servicio.ingenieria-prompt
+  .prompting-antes-despues__col--antes
+  .prompting-antes-despues__tit
+  span {
+  color: #fff;
+  background: linear-gradient(120deg, #5c5466 0%, #7a7285 100%);
+}
+.bloque-principal
+  .servicios
+  .contenedor
+  .panel-servicio.ingenieria-prompt
+  .prompting-antes-despues__col--despues
+  .prompting-antes-despues__tit
+  span {
+  color: #fff;
+  background: linear-gradient(125deg, #5f1f9a 0%, #8d2ce9 55%, #9d4aed 100%);
+  box-shadow: 0 2px 8px rgba(73, 19, 124, 0.25);
 }
 .bloque-principal .servicios .contenedor .panel-servicio.ingenieria-prompt .prompting-antes-despues .prompting-subtarjeta__lista {
-  margin-left: 0.75rem;
+  margin: 0 0 0 0.2rem;
+  font-size: clamp(0.98rem, 0.92rem + 0.22vw, 1.1rem);
+}
+.bloque-principal
+  .servicios
+  .contenedor
+  .panel-servicio.ingenieria-prompt
+  .prompting-antes-despues
+  .prompting-subtarjeta__lista
+  li {
+  position: relative;
+  padding-left: 0.15rem;
 }
 @media (max-width: 480px) {
-  .bloque-principal .servicios .contenedor .panel-servicio.ingenieria-prompt .prompting-antes-despues {
+  .bloque-principal
+    .servicios
+    .contenedor
+    .panel-servicio.ingenieria-prompt
+    .prompting-subtarjeta.prompting-subtarjeta--comparacion
+    .prompting-antes-despues {
     grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+  .bloque-principal
+    .servicios
+    .contenedor
+    .panel-servicio.ingenieria-prompt
+    .prompting-antes-despues::before {
+    display: none;
   }
 }
 .bloque-principal .servicios .contenedor .panel-servicio.agentes-ia .agentes-subtarjeta__lista li,
