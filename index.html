@@ -577,29 +577,37 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            const sliders = document.querySelectorAll('.text-princ > div'); // slider-1, slider-2
+            const sliders = document.querySelectorAll('.text-princ > div');
             const dots = document.querySelectorAll('.marcadores .circulos');
+            const sliderContainer = document.querySelector('.text-slider');
+            if (!sliders.length || !sliderContainer) return;
+
             let currentIndex = 0;
             let autoSlideInterval;
             let startX = 0;
+            let startY = 0;
             let isDragging = false;
 
             function showSlide(index) {
                 sliders.forEach((slide, i) => {
-                slide.classList.toggle('active', i === index);
+                    slide.classList.toggle('active', i === index);
                 });
                 dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === index);
+                    dot.classList.toggle('active', i === index);
                 });
                 currentIndex = index;
             }
 
             function nextSlide() {
-                const nextIndex = (currentIndex + 1) % sliders.length;
-                showSlide(nextIndex);
+                showSlide((currentIndex + 1) % sliders.length);
+            }
+
+            function prevSlide() {
+                showSlide((currentIndex - 1 + sliders.length) % sliders.length);
             }
 
             function startAutoSlide() {
+                clearInterval(autoSlideInterval);
                 autoSlideInterval = setInterval(nextSlide, 4000);
             }
 
@@ -607,54 +615,66 @@
                 clearInterval(autoSlideInterval);
             }
 
-            // Inicializar
             showSlide(0);
             startAutoSlide();
 
-            // Eventos para swipe / drag
-            const sliderContainer = document.querySelector('.text-slider');
+            dots.forEach((dot, i) => {
+                dot.addEventListener('click', () => {
+                    stopAutoSlide();
+                    showSlide(i);
+                    startAutoSlide();
+                });
+            });
+
+            const swipeThreshold = 50;
 
             sliderContainer.addEventListener('mousedown', (e) => {
+                if (e.button !== 0) return;
                 stopAutoSlide();
                 isDragging = true;
                 startX = e.clientX;
+                startY = e.clientY;
             });
 
             sliderContainer.addEventListener('mousemove', (e) => {
                 if (!isDragging) return;
-                const diff = e.clientX - startX;
-                if (diff > 50) { // mover a la izquierda
+                const diffX = e.clientX - startX;
+                const diffY = e.clientY - startY;
+                if (Math.abs(diffX) < swipeThreshold || Math.abs(diffX) < Math.abs(diffY)) return;
                 isDragging = false;
-                showSlide((currentIndex - 1 + sliders.length) % sliders.length);
+                if (diffX > 0) prevSlide();
+                else nextSlide();
                 startAutoSlide();
-                } else if (diff < -50) { // mover a la derecha
-                isDragging = false;
-                nextSlide();
-                startAutoSlide();
-                }
             });
 
             sliderContainer.addEventListener('mouseup', () => {
                 isDragging = false;
             });
 
-            // Eventos para pantallas táctiles
+            sliderContainer.addEventListener('mouseleave', () => {
+                isDragging = false;
+            });
+
             sliderContainer.addEventListener('touchstart', (e) => {
                 stopAutoSlide();
                 startX = e.touches[0].clientX;
-            });
+                startY = e.touches[0].clientY;
+            }, { passive: true });
 
-            sliderContainer.addEventListener('touchmove', (e) => {
-                const diff = e.touches[0].clientX - startX;
-                if (diff > 50) {
-                showSlide((currentIndex - 1 + sliders.length) % sliders.length);
-                startAutoSlide();
-                } else if (diff < -50) {
-                nextSlide();
-                startAutoSlide();
+            sliderContainer.addEventListener('touchend', (e) => {
+                const t = e.changedTouches[0];
+                if (!t) {
+                    startAutoSlide();
+                    return;
                 }
-            });
-
+                const diffX = t.clientX - startX;
+                const diffY = t.clientY - startY;
+                if (Math.abs(diffX) >= swipeThreshold && Math.abs(diffX) > Math.abs(diffY)) {
+                    if (diffX > 0) prevSlide();
+                    else nextSlide();
+                }
+                startAutoSlide();
+            }, { passive: true });
         });
     </script>
 
@@ -795,45 +815,108 @@
             // Initial setup
             iniciarSlider();
 
-            // Event Listeners for navigation buttons
-            btnPrev.addEventListener('click', () => {
-                detenerSlider();
-                prevSlide();
-                iniciarSlider(); // Restart slider after manual navigation
-            });
+            let sliderExpandido = false;
+            let swipeStartX = 0;
+            let swipeStartY = 0;
+            let arrastrandoProyectos = false;
+            let arrastreInicioX = 0;
+            let arrastreInicioY = 0;
 
-            btnNext.addEventListener('click', () => {
-                detenerSlider();
-                nextSlide();
-                iniciarSlider(); // Restart slider after manual navigation
-            });
+            function swipeActivo() {
+                return !sliderExpandido;
+            }
 
+            if (btnPrev) {
+                btnPrev.addEventListener('click', () => {
+                    detenerSlider();
+                    prevSlide();
+                    iniciarSlider();
+                });
+            }
+            if (btnNext) {
+                btnNext.addEventListener('click', () => {
+                    detenerSlider();
+                    nextSlide();
+                    iniciarSlider();
+                });
+            }
 
-            // "Ver todos" button functionality
             if (verTodosBtn) {
                 verTodosBtn.addEventListener('click', () => {
                     detenerSlider();
+                    sliderExpandido = true;
                     tarjetas.forEach(t => {
                         t.style.display = 'flex';
                         t.classList.add('active');
                         t.style.removeProperty('order');
                     });
                     verTodosBtn.style.display = 'none';
-                    contenedorIndicadores.style.display = 'none'; // Hide indicators
-                    sliderButtons.forEach(button => { // Hide navigation buttons
+                    contenedorIndicadores.style.display = 'none';
+                    sliderButtons.forEach(button => {
                         button.style.display = 'none';
                     });
                 });
             }
 
-            // Click on indicator (optional)
             indicadores.forEach(indicador => {
                 indicador.addEventListener('click', () => {
                     detenerSlider();
-                    startIndex = parseInt(indicador.dataset.index);
+                    startIndex = parseInt(indicador.dataset.index, 10);
                     updateSlider();
-                    iniciarSlider(); // Restart slider after manual navigation
+                    iniciarSlider();
                 });
+            });
+
+            const umbralSwipe = 55;
+
+            contenedorSlider.addEventListener('touchstart', (e) => {
+                if (!swipeActivo()) return;
+                swipeStartX = e.touches[0].clientX;
+                swipeStartY = e.touches[0].clientY;
+            }, { passive: true });
+
+            contenedorSlider.addEventListener('touchend', (e) => {
+                if (!swipeActivo()) return;
+                const t = e.changedTouches[0];
+                if (!t) return;
+                const dx = t.clientX - swipeStartX;
+                const dy = t.clientY - swipeStartY;
+                if (Math.abs(dx) < umbralSwipe || Math.abs(dx) < Math.abs(dy)) return;
+                detenerSlider();
+                if (dx > 0) prevSlide();
+                else nextSlide();
+                iniciarSlider();
+            }, { passive: true });
+
+            contenedorSlider.addEventListener('mousedown', (e) => {
+                if (!swipeActivo() || e.button !== 0) return;
+                const tag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+                if (tag === 'a' || tag === 'button' || e.target.closest('a, button')) return;
+                arrastrandoProyectos = true;
+                arrastreInicioX = e.clientX;
+                arrastreInicioY = e.clientY;
+                detenerSlider();
+            });
+
+            contenedorSlider.addEventListener('mousemove', (e) => {
+                if (!arrastrandoProyectos) return;
+                const dx = e.clientX - arrastreInicioX;
+                const dy = e.clientY - arrastreInicioY;
+                if (Math.abs(dx) < umbralSwipe || Math.abs(dx) < Math.abs(dy)) return;
+                arrastrandoProyectos = false;
+                if (dx > 0) prevSlide();
+                else nextSlide();
+                iniciarSlider();
+            });
+
+            contenedorSlider.addEventListener('mouseup', () => {
+                if (arrastrandoProyectos) iniciarSlider();
+                arrastrandoProyectos = false;
+            });
+
+            contenedorSlider.addEventListener('mouseleave', () => {
+                if (arrastrandoProyectos) iniciarSlider();
+                arrastrandoProyectos = false;
             });
         });
     </script>
