@@ -1333,6 +1333,39 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   overflow-x: hidden;
   touch-action: pan-y;
 }
+
+/* Vista "Ver todos": todas las tarjetas en rejilla, 3 por fila */
+.bloque-principal .proyectos .contenedor .slider-projects.slider-projects--grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 3vw, 2rem);
+  min-height: 0;
+  align-items: stretch;
+  justify-items: stretch;
+  touch-action: auto;
+}
+.bloque-principal .proyectos .contenedor .slider-projects.slider-projects--grid > .tarjeta {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  height: auto;
+  min-height: 0;
+  margin: 0;
+}
+.bloque-principal .proyectos .contenedor .slider-projects.slider-projects--grid > .tarjeta .parrafo-proyecto {
+  flex: 1 1 auto;
+}
+@media screen and (max-width: 1100px) {
+  .bloque-principal .proyectos .contenedor .slider-projects.slider-projects--grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: 768px) {
+  .bloque-principal .proyectos .contenedor .slider-projects.slider-projects--grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 .bloque-principal .proyectos .contenedor .slider-projects .btn-prev,
 .bloque-principal .proyectos .contenedor .slider-projects .btn-next {
   position: absolute;
@@ -1823,6 +1856,9 @@ body.modo-oscuro .servicios .but_cotizar .cotizar:hover {
   .bloque-principal .proyectos .contenedor .slider-projects .tarjeta, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1,
   .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 {
     margin: 25px 0;
+  }
+  .bloque-principal .proyectos .contenedor .slider-projects.slider-projects--grid > .tarjeta {
+    margin: 0;
   }
   .bloque-principal .proyectos .contenedor .slider-projects .tarjeta .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-0 .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-1 .tit-proyecto,
   .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-2 .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-3 .tit-proyecto, .bloque-principal .proyectos .contenedor .slider-projects .tarjeta-4 .tit-proyecto {

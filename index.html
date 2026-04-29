@@ -845,6 +845,7 @@
                 verTodosBtn.addEventListener('click', () => {
                     detenerSlider();
                     sliderExpandido = true;
+                    contenedorSlider.classList.add('slider-projects--grid');
                     tarjetas.forEach(t => {
                         t.style.display = 'flex';
                         t.classList.add('active');

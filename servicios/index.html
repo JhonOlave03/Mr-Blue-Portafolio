@@ -505,15 +505,20 @@
 
             // "Ver todos" button functionality
             if (verTodosBtn) {
+                const contenedorSliderServ = document.querySelector('.slider-projects');
                 verTodosBtn.addEventListener('click', () => {
                     detenerSlider();
+                    if (contenedorSliderServ) {
+                        contenedorSliderServ.classList.add('slider-projects--grid');
+                    }
                     tarjetas.forEach(t => {
                         t.style.display = 'flex';
                         t.classList.add('active');
+                        t.style.removeProperty('order');
                     });
                     verTodosBtn.style.display = 'none';
-                    contenedorIndicadores.style.display = 'none'; // Hide indicators
-                    sliderButtons.forEach(button => { // Hide navigation buttons
+                    contenedorIndicadores.style.display = 'none';
+                    sliderButtons.forEach(button => {
                         button.style.display = 'none';
                     });
                 });
