@@ -533,7 +533,7 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   padding: 20px;
 }
 .bloque-principal .video .servicios_video {
-  width: min(52%, 40rem);
+  width: 70%;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -550,9 +550,7 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
 /* Responsive para tablets */
 @media (max-width: 1024px) {
   .bloque-principal .video .servicios_video {
-    width: min(56%, 34rem);
-    margin-left: auto;
-    margin-right: auto;
+    width: 70%;
   }
 }
 
@@ -564,10 +562,7 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
     align-items: center;
   }
   .bloque-principal .video .servicios_video {
-    width: min(72vw, 22rem);
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 70%;
   }
 }
 .bloque-principal .experiencia {
