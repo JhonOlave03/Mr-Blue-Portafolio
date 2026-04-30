@@ -533,8 +533,11 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   padding: 20px;
 }
 .bloque-principal .video .servicios_video {
-  width: 60%;
+  width: min(52%, 40rem);
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  flex-shrink: 0;
   aspect-ratio: 16 / 9;
 }
 .bloque-principal .video .servicios_video video {
@@ -547,18 +550,22 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
 /* Responsive para tablets */
 @media (max-width: 1024px) {
   .bloque-principal .video .servicios_video {
-    width: 72.25%;
+    width: min(56%, 34rem);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 /* Responsive para móviles */
 @media (max-width: 768px) {
   .bloque-principal .video {
-    padding: 12px 18px;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
   }
   .bloque-principal .video .servicios_video {
-    width: 100%;
-    max-width: min(86vw, 34rem);
+    width: min(72vw, 22rem);
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
