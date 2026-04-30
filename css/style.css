@@ -554,11 +554,13 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
 /* Responsive para móviles */
 @media (max-width: 768px) {
   .bloque-principal .video {
-    padding: 10px 6px;
+    padding: 12px 18px;
   }
   .bloque-principal .video .servicios_video {
     width: 100%;
-    max-width: min(calc(100vw - 12px), 58rem);
+    max-width: min(86vw, 34rem);
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .bloque-principal .experiencia {
@@ -875,6 +877,11 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
     overflow: hidden;
     width: 100%;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-left: max(12px, 2.5vw);
+    padding-right: max(12px, 2.5vw);
     border-radius: 10px;
     touch-action: pan-y;
   }
@@ -901,7 +908,9 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
     min-width: 0;
     min-height: 0;
     height: auto;
+    max-width: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
   }
   .bloque-principal .servicios .contenedor .servicios-carrusel__btn {
     position: absolute;
@@ -966,6 +975,15 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   .bloque-principal .servicios .contenedor .panel-servicio .servicios-carrusel__track > article {
     min-height: 0 !important;
     height: auto;
+  }
+  /* Evita que la comparación 2 columnas fuerce un ancho mínimo mayor que la tarjeta en carrusel */
+  .bloque-principal
+    .servicios
+    .contenedor
+    .panel-servicio.ingenieria-prompt
+    .prompting-subtarjeta.prompting-subtarjeta--comparacion
+    .prompting-antes-despues {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 }
 

@@ -25,7 +25,16 @@
     var layoutRetries = 0;
 
     function slideWidth() {
-      return viewport.clientWidth || 0;
+      var cw = viewport.clientWidth || 0;
+      if (!cw) return 0;
+      try {
+        var cs = window.getComputedStyle(viewport);
+        var pl = parseFloat(cs.paddingLeft) || 0;
+        var pr = parseFloat(cs.paddingRight) || 0;
+        return Math.max(0, Math.floor(cw - pl - pr));
+      } catch (err) {
+        return Math.floor(cw);
+      }
     }
 
     function clearSlideDimensions() {
