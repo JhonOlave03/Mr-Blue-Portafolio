@@ -361,8 +361,8 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   filter: invert(63%) sepia(45%) saturate(350%) hue-rotate(180deg);
 }
 
-.btn-menu-movil,
-.menu-movil-fondo {
+.bloque-principal .menu-navegacion .btn-menu-movil,
+.bloque-principal .menu-navegacion .menu-movil-fondo {
   display: none;
 }
 
@@ -1787,6 +1787,7 @@ body.modo-oscuro .servicios .but_cotizar .cotizar:hover {
   }
   .bloque-principal .menu-navegacion {
     position: fixed;
+    overflow: visible;
   }
   .bloque-principal .menu-navegacion .tam-contenedor {
     justify-content: flex-start;
@@ -1802,20 +1803,26 @@ body.modo-oscuro .servicios .but_cotizar .cotizar:hover {
     align-items: center;
     gap: 8px;
   }
-  .btn-menu-movil {
+  .bloque-principal .menu-navegacion .btn-menu-movil {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     order: 10;
+    position: relative;
+    z-index: 1003;
     width: 44px;
     height: 44px;
+    min-width: 44px;
+    min-height: 44px;
     margin: 0 6px 0 0;
     padding: 0;
     flex-shrink: 0;
-    border: 2px solid rgba(255, 255, 255, 0.45);
+    border: 2px solid rgba(255, 255, 255, 0.55);
     border-radius: 8px;
-    background: transparent;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
   .btn-menu-movil__caja {
     display: flex;
@@ -1833,16 +1840,16 @@ body.modo-oscuro .servicios .but_cotizar .cotizar:hover {
     border-radius: 1px;
     transition: transform 0.2s ease, opacity 0.2s ease;
   }
-  .menu-navegacion.menu-movil-abierto .btn-menu-movil__barra:nth-child(1) {
+  .bloque-principal .menu-navegacion.menu-movil-abierto .btn-menu-movil .btn-menu-movil__caja .btn-menu-movil__barra:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
   }
-  .menu-navegacion.menu-movil-abierto .btn-menu-movil__barra:nth-child(2) {
+  .bloque-principal .menu-navegacion.menu-movil-abierto .btn-menu-movil .btn-menu-movil__caja .btn-menu-movil__barra:nth-child(2) {
     opacity: 0;
   }
-  .menu-navegacion.menu-movil-abierto .btn-menu-movil__barra:nth-child(3) {
+  .bloque-principal .menu-navegacion.menu-movil-abierto .btn-menu-movil .btn-menu-movil__caja .btn-menu-movil__barra:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
   }
-  .menu-movil-fondo {
+  .bloque-principal .menu-navegacion .menu-movil-fondo {
     display: none;
     position: fixed;
     top: 100px;
@@ -1855,8 +1862,9 @@ body.modo-oscuro .servicios .but_cotizar .cotizar:hover {
     padding: 0;
     margin: 0;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
   }
-  .menu-navegacion.menu-movil-abierto .menu-movil-fondo {
+  .bloque-principal .menu-navegacion.menu-movil-abierto .menu-movil-fondo {
     display: block;
   }
   .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn {
@@ -1866,8 +1874,11 @@ body.modo-oscuro .servicios .but_cotizar .cotizar:hover {
     left: 0;
     right: 0;
     width: 100%;
+    max-width: 100%;
     max-height: calc(100vh - 100px);
+    max-height: calc(100dvh - 100px);
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     margin: 0;
     padding: 0;
     background-color: rgb(36, 5, 65);
@@ -1878,9 +1889,11 @@ body.modo-oscuro .servicios .but_cotizar .cotizar:hover {
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+    -webkit-transform: translateY(-10px);
   }
-  .menu-navegacion.menu-movil-abierto .opciones-btn {
+  .bloque-principal .menu-navegacion.menu-movil-abierto .tam-contenedor .barra-navegacion .opciones-btn {
     transform: translateY(0);
+    -webkit-transform: translateY(0);
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -1904,6 +1917,7 @@ body.modo-oscuro .servicios .but_cotizar .cotizar:hover {
     padding: 14px 22px;
     border-right: none;
     font-size: 18px;
+    color: #fff;
   }
   .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li a:hover {
     transform: none;
