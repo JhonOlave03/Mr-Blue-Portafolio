@@ -360,6 +360,12 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
 .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .modo-dn .btn-dn img:hover {
   filter: invert(63%) sepia(45%) saturate(350%) hue-rotate(180deg);
 }
+
+.btn-menu-movil,
+.menu-movil-fondo {
+  display: none;
+}
+
 .bloque-principal .quien-soy {
   display: flex;
   position: relative;
@@ -1793,19 +1799,123 @@ body.modo-oscuro .servicios .but_cotizar .cotizar:hover {
   }
   .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion {
     justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-menu-movil {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    order: 10;
+    width: 44px;
+    height: 44px;
+    margin: 0 6px 0 0;
+    padding: 0;
+    flex-shrink: 0;
+    border: 2px solid rgba(255, 255, 255, 0.45);
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+  }
+  .btn-menu-movil__caja {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 22px;
+    height: 16px;
+  }
+  .btn-menu-movil__barra {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+    border-radius: 1px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+  .menu-navegacion.menu-movil-abierto .btn-menu-movil__barra:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  .menu-navegacion.menu-movil-abierto .btn-menu-movil__barra:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-navegacion.menu-movil-abierto .btn-menu-movil__barra:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+  .menu-movil-fondo {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1001;
+    background: rgba(0, 0, 0, 0.45);
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  .menu-navegacion.menu-movil-abierto .menu-movil-fondo {
+    display: block;
   }
   .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn {
-    display: none;
+    display: block;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(36, 5, 65);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    z-index: 1002;
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+  }
+  .menu-navegacion.menu-movil-abierto .opciones-btn {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
   }
   .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces {
-    justify-content: end;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 8px 0 20px;
   }
   .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li {
     margin: 0;
+    padding: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li:last-child {
+    border-bottom: none;
+  }
+  .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li a {
+    display: block;
+    padding: 14px 22px;
+    border-right: none;
+    font-size: 18px;
+  }
+  .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .opciones-btn .enlaces li a:hover {
+    transform: none;
+    background: rgba(255, 255, 255, 0.07);
   }
   .bloque-principal .menu-navegacion .tam-contenedor .barra-navegacion .modo-dn {
     display: block;
-    margin-left: 100px;
+    margin-left: 0;
+    order: 20;
+  }
+  body.menu-movil-abierto {
+    overflow: hidden;
   }
   .bloque-principal .quien-soy {
     background-image: none;

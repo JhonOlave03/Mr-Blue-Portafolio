@@ -28,8 +28,15 @@
                     </div>
                 </div>
                 <nav class="barra-navegacion">
+                    <button type="button" class="btn-menu-movil" aria-expanded="false" aria-controls="menu-enlaces-principal" aria-label="Abrir menú">
+                        <span class="btn-menu-movil__caja" aria-hidden="true">
+                            <span class="btn-menu-movil__barra"></span>
+                            <span class="btn-menu-movil__barra"></span>
+                            <span class="btn-menu-movil__barra"></span>
+                        </span>
+                    </button>
                     <div class="opciones-btn">
-                        <ul class="enlaces">
+                        <ul id="menu-enlaces-principal" class="enlaces">
                             <li class="opcion">
                                 <a href="index.html">Inicio</a>
                             </li>
@@ -57,6 +64,7 @@
                     </div>
                 </nav>
             </div>
+            <div class="menu-movil-fondo" aria-hidden="true"></div>
         </header>
         <section class="quien-soy" id="quien-soy">
             <div class="imagen-texto">
@@ -935,6 +943,7 @@
             });
         });
     </script>
+    <script src="js/menu-movil.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
