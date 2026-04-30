@@ -87,7 +87,10 @@
                         <div class="prompting-intro">
                             <p>Convierte la IA en una herramienta confiable que realmente trabaja para tu negocio, no en algo impredecible que te hace perder tiempo.</p>
                         </div>
-                        <div class="prompting-tarjetas">
+                        <div class="servicios-carrusel">
+                            <button type="button" class="servicios-carrusel__btn servicios-carrusel__btn--prev" aria-label="Tarjeta anterior">&lt;</button>
+                            <div class="servicios-carrusel__viewport">
+                        <div class="prompting-tarjetas servicios-carrusel__track">
                             <article class="prompting-subtarjeta">
                                 <h3 class="prompting-subtarjeta__titulo">Qué obtienes</h3>
                                 <ul class="prompting-subtarjeta__lista">
@@ -142,6 +145,10 @@
                                 </div>
                             </article>
                         </div>
+                            </div>
+                            <button type="button" class="servicios-carrusel__btn servicios-carrusel__btn--next" aria-label="Tarjeta siguiente">&gt;</button>
+                            <div class="servicios-carrusel__indicadores"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="panel-servicio agentes-ia" data-servicio-panel="agentes-ia">
@@ -150,7 +157,10 @@
                             <p>Atiende a todos tus clientes al instante, sin aumentar tu equipo.</p>
                             <p>Automatiza respuestas, reduce carga operativa y no pierdas oportunidades por demoras.</p>
                         </div>
-                        <div class="agentes-tarjetas">
+                        <div class="servicios-carrusel">
+                            <button type="button" class="servicios-carrusel__btn servicios-carrusel__btn--prev" aria-label="Tarjeta anterior">&lt;</button>
+                            <div class="servicios-carrusel__viewport">
+                        <div class="agentes-tarjetas servicios-carrusel__track">
                             <article class="agentes-subtarjeta">
                                 <h3 class="agentes-subtarjeta__titulo">Agentes RAG</h3>
                                 <ul class="agentes-subtarjeta__lista">
@@ -187,6 +197,10 @@
                                 </div>
                             </article>
                         </div>
+                            </div>
+                            <button type="button" class="servicios-carrusel__btn servicios-carrusel__btn--next" aria-label="Tarjeta siguiente">&gt;</button>
+                            <div class="servicios-carrusel__indicadores"></div>
+                        </div>
                     </div>
                 </div>  
                 <div class="panel-servicio entrenamiento-modelos-ia" data-servicio-panel="entrenamiento-modelos-ia">
@@ -194,7 +208,10 @@
                         <div class="modelos-intro">
                             <p>Convierte tus datos en decisiones inteligentes y deja de operar a ciegas.</p>
                         </div>
-                        <div class="modelos-tarjetas">
+                        <div class="servicios-carrusel">
+                            <button type="button" class="servicios-carrusel__btn servicios-carrusel__btn--prev" aria-label="Tarjeta anterior">&lt;</button>
+                            <div class="servicios-carrusel__viewport">
+                        <div class="modelos-tarjetas servicios-carrusel__track">
                             <article class="modelos-subtarjeta">
                                 <h3 class="modelos-subtarjeta__titulo">¿Qué puedes lograr?</h3>
                                 <ul class="modelos-subtarjeta__lista">
@@ -230,6 +247,10 @@
                                     <a href="solicitar-demo.html?s=md-resultados">Solicitar Demo</a>
                                 </div>
                             </article>
+                        </div>
+                            </div>
+                            <button type="button" class="servicios-carrusel__btn servicios-carrusel__btn--next" aria-label="Tarjeta siguiente">&gt;</button>
+                            <div class="servicios-carrusel__indicadores"></div>
                         </div>
                     </div>
                 </div>    
@@ -557,6 +578,7 @@
             });
         });
     </script>
+    <script src="../js/servicios-carrusel.js"></script>
     <script src="../js/menu-movil.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

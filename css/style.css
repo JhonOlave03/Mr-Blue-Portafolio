@@ -771,11 +771,6 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   }
 }
 @media (max-width: 1023px) {
-  .bloque-principal .servicios .contenedor .panel-servicio.agentes-ia .agentes-tarjetas,
-  .bloque-principal .servicios .contenedor .panel-servicio.ingenieria-prompt .prompting-tarjetas,
-  .bloque-principal .servicios .contenedor .panel-servicio.entrenamiento-modelos-ia .modelos-tarjetas {
-    grid-template-columns: 1fr;
-  }
   .bloque-principal .servicios .contenedor .panel-servicio.agentes-ia .agentes-subtarjeta,
   .bloque-principal .servicios .contenedor .panel-servicio.ingenieria-prompt .prompting-subtarjeta,
   .bloque-principal .servicios .contenedor .panel-servicio.entrenamiento-modelos-ia .modelos-subtarjeta {
@@ -848,6 +843,125 @@ body.modo-oscuro .habilidades .contenedor .conjunto-habilidad .habilidad .paq-ha
   flex: 1 1 auto;
   align-items: stretch;
 }
+
+/* Carrusel de subtarjetas (servicios): escritorio = rejilla 3; móvil = estilo tipo proyectos */
+@media (min-width: 1024px) {
+  .bloque-principal .servicios .contenedor .servicios-carrusel__btn,
+  .bloque-principal .servicios .contenedor .servicios-carrusel__indicadores {
+    display: none !important;
+  }
+  .bloque-principal .servicios .contenedor .servicios-carrusel__viewport {
+    overflow: visible;
+    width: 100%;
+  }
+  .bloque-principal .servicios .contenedor .servicios-carrusel__track {
+    transform: none !important;
+  }
+}
+@media (max-width: 1023px) {
+  .bloque-principal .servicios .contenedor .servicios-carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    min-height: min(72dvh, 36rem);
+    padding: 0 0 0.35rem;
+    margin: 0;
+  }
+  .bloque-principal .servicios .contenedor .servicios-carrusel__viewport {
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    touch-action: pan-y;
+  }
+  .bloque-principal .servicios .contenedor .servicios-carrusel__track.agentes-tarjetas,
+  .bloque-principal .servicios .contenedor .servicios-carrusel__track.prompting-tarjetas,
+  .bloque-principal .servicios .contenedor .servicios-carrusel__track.modelos-tarjetas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 0;
+    width: 100%;
+    grid-template-columns: none;
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform;
+  }
+  .bloque-principal .servicios .contenedor .servicios-carrusel__track > article {
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0;
+    height: auto;
+    box-sizing: border-box;
+  }
+  .bloque-principal .servicios .contenedor .servicios-carrusel__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 3;
+    transition: background-color 0.3s;
+    line-height: 1;
+  }
+  .bloque-principal .servicios .contenedor .servicios-carrusel__btn:hover {
+    background-color: rgb(36, 5, 65);
+  }
+  .bloque-principal .servicios .contenedor .servicios-carrusel__btn--prev {
+    left: 10px;
+  }
+  .bloque-principal .servicios .contenedor .servicios-carrusel__btn--next {
+    right: 10px;
+  }
+  .bloque-principal .servicios .contenedor .servicios-carrusel__indicadores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+    padding: 0 12px 6px;
+  }
+  .bloque-principal .servicios .contenedor .servicios-carrusel__indicadores .servicios-carrusel__dot {
+    width: 12px;
+    height: 12px;
+    padding: 12px;
+    margin: -12px;
+    box-sizing: content-box;
+    background-clip: content-box;
+    border: none;
+    border-radius: 50%;
+    background-color: #aaa;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .bloque-principal .servicios .contenedor .servicios-carrusel__indicadores .servicios-carrusel__dot.activo {
+    background-color: rgb(36, 5, 65);
+  }
+  body.modo-oscuro .bloque-principal .servicios .contenedor .servicios-carrusel__indicadores .servicios-carrusel__dot {
+    background-color: rgba(255, 255, 255, 0.35);
+  }
+  body.modo-oscuro .bloque-principal .servicios .contenedor .servicios-carrusel__indicadores .servicios-carrusel__dot.activo {
+    background-color: #8d2ce9;
+  }
+  body.modo-oscuro .bloque-principal .servicios .contenedor .servicios-carrusel__btn:hover {
+    background-color: #8d2ce9;
+    color: #fff;
+  }
+  .bloque-principal .servicios .contenedor .panel-servicio .servicios-carrusel__track > article {
+    min-height: 0 !important;
+    height: auto;
+  }
+}
+
 .bloque-principal .servicios .contenedor .panel-servicio.agentes-ia .agentes-subtarjeta,
 .bloque-principal .servicios .contenedor .panel-servicio.ingenieria-prompt .prompting-subtarjeta,
 .bloque-principal .servicios .contenedor .panel-servicio.entrenamiento-modelos-ia .modelos-subtarjeta {
